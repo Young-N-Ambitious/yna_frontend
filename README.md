@@ -1,3 +1,27 @@
+## Yong N Ambitious FrontEnd ##
+
+# Project Description #
+
+- What this application does?
+- Why did we use certian technologies?
+- What are some of the challangeds that we faced and features we plan to implemnt? 
+
+# Table of Contents #
+
+# How to Install and Run the Project
+To install this project create a YNA directory `mkdir YNA`
+`cd` into YNA then clone the project to you local terminal by running `git clone **ssh_key*` copy the ssh_key from above
+Once cloned you are ready to begin contributuing to out project.
+
+# How to Use the Project
+
+# Credits
+
+# License
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
