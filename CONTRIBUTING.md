@@ -54,9 +54,7 @@ Any code modifications will have to be accompanied by the appropriate unit tests
 
 If you want to run the unit tests and linter on your machine, run the following commands:
 
-`npm run unit` for unit tests
-
-`npm run lint` for linter.
+`npm test` for unit tests
 
 You can also configure your editor of choice with a ESLint plugin so you can get the linter feedback as you write code.
 
