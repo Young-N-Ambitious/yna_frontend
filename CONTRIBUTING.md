@@ -26,8 +26,8 @@ If you want to get started contributing code to this project but don't know exac
         4. cd into the YNA frontend directory by running ``cd  yna_frontend``
         5. Now run ``npm install`` to install all of the project dependencies.
     2. Now that you are inside the frontend directory, you need to create a branch.
-        1. To create a branch run: git checkout -b FD-[#<issue_number>]<commit_type>-<description/name>
-            * **Example branch name: FD-0001(docs)-updatesreadme** 
+        1. To create a branch run: git checkout -b FD-[#<issue_number>]-<commit_type>-<description/name>
+            * **Example branch name: FD-0001-docs-updatesreadme** 
             1. The issue number can be found on the title of the issue you were assigned.
             2. The commit_types are: 
                 * (feat): (new feature for the user, not a new feature for build script)
