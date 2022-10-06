@@ -1,4 +1,4 @@
-# Contributing to Openverse
+# Contributing to Young N Ambitious
 
 Thank you for your interest in contributing to Young N Ambitious (YNA)! This document is a set of guidelines to help you contribute to this project.
 
