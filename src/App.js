@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {HomePage, AboutUs, ContactUs, JoinUs, Members, Login, NotFound} from './pages'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<HomePage/>} />
+        <Route exact path='/about-us' element={<AboutUs/>} />
+        <Route exact path='/members' element={<Members/>} />
+        <Route exact path='/contact-us' element={<ContactUs/>} />
+        <Route exact path='/join-us' element={<JoinUs/>} />
+        <Route exact path='/login' element={<Login/>} />
+
+        {/* The Below Route is for 404 #PageNotFound, Make sure to Place this route at the end of all Route [if want to add other Route, add Route above 404 Route] */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+
+    </BrowserRouter>
+
   );
 }
 
