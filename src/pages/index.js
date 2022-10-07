@@ -6,4 +6,5 @@ import Members from './members/Members'
 import Login from './login/login'
 import NotFound from './globalComponents/notFound/NotFound'
 
+// Exporting all components
 export {HomePage, AboutUs, ContactUs, JoinUs, Members, Login, NotFound}
