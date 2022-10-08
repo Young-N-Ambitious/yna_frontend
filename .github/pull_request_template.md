@@ -2,7 +2,10 @@
 ## Fixes
 <!-- If PR doesn't fully resolve the issue, replace 'Fixes' below with 'Related to'. -->
 <!-- If there is no issue being resolved, please consider opening one before creating this pull request. -->
-Fixes #FD-[issue number] by @[issue author]
+Fixes 
+Issue Title: FD-###### - 
+Github #[issue number]
+Created by @[issue author]
 
 ## Description
 <!--
