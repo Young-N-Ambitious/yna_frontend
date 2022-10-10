@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./pages/globalComponents/footer/Footer";
 import { Routes, Route } from "react-router-dom";
 import {
   HomePage,
@@ -53,9 +54,10 @@ function App() {
         {/* The Below Route is for 404 #PageNotFound, Make sure to Place this route at the end of all Route [if want to add other Route, add Route above 404 Route] */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <header className="flex justify-center items-center h-screen">
-        <p className="text-blue-500">tailwind added</p>
-      </header>
+       <header className="flex justify-center items-center h-screen">
+         <p className="text-blue-500">tailwind added</p>
+        </header>
+      <Footer />
     </div>
   );
 }
