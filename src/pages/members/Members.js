@@ -3,7 +3,7 @@ import React from 'react'
 const Members = () => {
   return (
     <div>
-      Hey!, You are Landed on Members, Congrats !!
+      <h1>Hey!, You are Landed on Members, Congrats !!</h1>
     </div>
   )
 }

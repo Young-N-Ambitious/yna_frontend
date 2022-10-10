@@ -50,7 +50,6 @@ function App() {
         ))}
         <Route exact path="/members" element={<Members />} />
         <Route exact path="/login" element={<Login />} />
-
         {/* The Below Route is for 404 #PageNotFound, Make sure to Place this route at the end of all Route [if want to add other Route, add Route above 404 Route] */}
         <Route path="*" element={<NotFound />} />
       </Routes>
