@@ -1,6 +1,6 @@
 import "./App.css";
 import Footer from "./pages/globalComponents/footer/Footer";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import {
   HomePage,
   AboutUs,
