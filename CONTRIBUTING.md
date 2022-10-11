@@ -28,9 +28,9 @@ If you want to get started contributing code to this project but don't know exac
 # How To Contribute - Set Up
 
 * Now that you are inside the frontend directory, you need to create a branch based off the development branch.
-    * Run: `git checkout development` 
-    * Confirm you are on the development branch by running `git status`
-    * Create a branch based off the development branch by running - git checkout -b `branch-name`
+    * Run: `git checkout dev` 
+    * Confirm you are on the dev branch by running `git status`
+    * Create a branch based off the dev branch by running - git checkout -b `branch-name`
     * Make your changes - commit often using [commit best practices][best_practices].
     * Make sure to add test to all of your changes, when applicable. 
 
@@ -55,11 +55,11 @@ If you want to get started contributing code to this project but don't know exac
              * (chore): (updating grunt tasks etc; no production code change)
         *  The description/name is the name or title descripting the changes you made.
    * Push your changes to your forked repo by running `git push --set-upstream origin <branch name>`
-   * On Github create a pull request, all pull requests _must_ target the `development` branch of the
+   * On Github create a pull request, all pull requests _must_ target the `dev` branch of the
    repository.
 
 # IMPORTANT BEFORE MAKING PULL REQUEST 
-On Github create a pull request, all pull requests _must_ target the `development` branch of the repository.
+On Github create a pull request, all pull requests _must_ target the `dev` branch of the repository.
 
 
 ## Testing 
