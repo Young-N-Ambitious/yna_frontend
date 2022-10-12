@@ -53,7 +53,7 @@ If you want to get started contributing code to this project but don't know exac
              * (refactor): (refactoring production code, eg. renaming a variable)
              * (test): (adding missing tests, refactoring tests; no production code change)
              * (chore): (updating grunt tasks etc; no production code change)
-        *  The description/name is the name or title descripting the changes you made.
+        *  The description/name is the name or title description the changes you made.
    * Push your changes to your forked repo by running `git push --set-upstream origin <branch name>`
    * On Github create a pull request, all pull requests _must_ target the `dev` branch of the
    repository.
