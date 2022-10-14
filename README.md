@@ -13,10 +13,13 @@ To install this project:
 * `cd` into the YNA directory 
 * clone the project to your local terminal by running `git clone **ssh_key*` copy the ssh_key from above
 
+## Contributing
+For instructions on how to contribute to our project visit our [CONTRIBUTING Doc](https://github.com/Young-N-Ambitious/yna_frontend/blob/main/CONTRIBUTING.md)
+
 ## License ##
 * [MIT LICENSE](https://opensource.org/licenses/MIT)
 
-## Join The YNA Community To Contribute: ##
+## Do you love this project? Join The YNA Community to learn more about how to contribute: ##
 * [Member Application](https://docs.google.com/forms/d/e/1FAIpQLSfEHpF9H3U9yCzmUPEiac637mECOzXAqrr9AXuxuz48KUd1pQ/viewform)
 
 
