@@ -15,6 +15,4 @@ padding: 2% 0 2% 5%;
         font-weight: bold;
     }
 }
-
-
 `;
