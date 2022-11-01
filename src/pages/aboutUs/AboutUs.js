@@ -1,12 +1,11 @@
 import React from 'react'
 
-const AboutUs = () => {
-  return (
-    <div>
-      <h1>Hey! You are Landed on About Us, Congrats !!</h1>
 
-    </div>
-  )
+export default function AboutUs() {
+    return (
+        <div>
+            <h1>About Us</h1>
+        </div>
+    )
 }
 
-export default AboutUs
