@@ -5,7 +5,6 @@ export const WhyUsStyle = styled.div`
     color: #ffc700;
     font-weight: 700;
     font-size: 20px;
-    line-height: 48px;
   }
   font: Inter;
   background-color: #000000;

@@ -5,7 +5,7 @@ const WhyUs = () => {
     <WhyUsStyle>
       <div id="why-us">
         <p>Why Us</p>
-        <div id="what-we-do">What do we do</div>
+        <span id="what-we-do">What do we do</span>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
