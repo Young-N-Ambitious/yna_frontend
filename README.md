@@ -9,17 +9,15 @@ This is the Frontend React application
 
 ## Getting Started ##
 To install this project: 
-* create a YNA directory `mkdir YNA`
-* `cd` into the YNA directory 
-* clone the project to your local terminal by running `git clone **ssh_key*` copy the ssh_key from above
+* create a fork of the application and clone the app to your local environment: `git clone **ssh_key*` copy the ssh_key from above.
+* run ```npm install``` to install dependencies 
+* run ```npm start``` to start the server
 
-## Contributing
-For instructions on how to contribute to our project visit our [CONTRIBUTING Doc](https://github.com/Young-N-Ambitious/yna_frontend/blob/main/CONTRIBUTING.md)
+## To Contribute: 
+* [Contributing Doc](https://github.com/Young-N-Ambitious/yna_frontend/blob/main/CONTRIBUTING.md)
+
+## Join The YNA Community:
+- [Member Application](https://docs.google.com/forms/d/e/1FAIpQLSfEHpF9H3U9yCzmUPEiac637mECOzXAqrr9AXuxuz48KUd1pQ/viewform)
 
 ## License ##
-* [MIT LICENSE](https://opensource.org/licenses/MIT)
-
-## Do you love this project? Join The YNA Community to learn more about how to contribute: ##
-* [Member Application](https://docs.google.com/forms/d/e/1FAIpQLSfEHpF9H3U9yCzmUPEiac637mECOzXAqrr9AXuxuz48KUd1pQ/viewform)
-
-
+- [MIT LICENSE](https://opensource.org/licenses/MIT)
