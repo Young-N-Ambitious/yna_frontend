@@ -17,6 +17,9 @@ To execute quickly, without cloning the project to your local machine, run this 
   />
 </a>
 
+Setup Your Local Environment:
+* [Environment Setup](/EnvironmentSetup.md)
+
 To install this project: 
 * create a fork of the application and clone the app to your local environment: `git clone **ssh_key*` copy the ssh_key from above.
 * run ```npm install``` to install dependencies 
