@@ -160,17 +160,17 @@ npm start
 
 ## Application
 
-This is the Rails API application maintaining the data
+This is the Frontend React application
 
 ## Getting Started
 
 To install this project:
 
 - clone the project to your local terminal by running `git clone **ssh_key*` copy the ssh_key from above
-- run `bundle install` to install gems/dependencies
-- run `rails db:migrate` to migrate the database
-- run `rails db:seed` to load seed data if present (optional)
-- run `rails s` to start server
+- run `npm install` to install react dependencies
+- run `npm run db:migrate` to migrate the database
+- run `npm run db:seed` to load seed data if present (optional)
+- run `npm start` to start server
 
 ## License
 
