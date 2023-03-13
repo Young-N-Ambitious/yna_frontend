@@ -8,6 +8,15 @@ There are so many career changers and recruiters who are trying to navigate a bi
 This is the Frontend React application
 
 ## Getting Started ##
+To execute quickly, without cloning the project to your local machine, run this project in the cloud with Gitpod:
+
+<a href="https://gitpod.io/#https://github.com/Young-N-Ambitious/yna_frontend">
+  <img
+    src="https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod"
+    alt="Contribute with Gitpod"
+  />
+</a>
+
 To install this project: 
 * create a fork of the application and clone the app to your local environment: `git clone **ssh_key*` copy the ssh_key from above.
 * run ```npm install``` to install dependencies 
