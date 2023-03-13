@@ -1,4 +1,3 @@
-
 /* 
 error here does not break anything
 these are for adding styles to all pages
@@ -10,6 +9,8 @@ body {
         "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* the margin below is for the footer since it sticks to the bottom. see issue #43 for more context*/
+    margin-bottom: 46px;
 }
 
 code {
