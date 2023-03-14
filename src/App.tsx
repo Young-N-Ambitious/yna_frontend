@@ -1,5 +1,4 @@
 import "./App.css";
-import Footer from "./pages/globalComponents/footer/Footer";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { HomePage, AboutUs, ContactUs, JoinUs, Members, Login, NotFound } from "./pages";
 
@@ -18,10 +17,6 @@ function App() {
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
-            <header className="flex justify-center items-center h-screen">
-                <p className="text-blue-500">tailwind added</p>
-            </header>
-            <Footer />
         </div>
     );
 }
