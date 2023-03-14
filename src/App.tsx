@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { HomePage, AboutUs, ContactUs, JoinUs, Members, Login, NotFound } from "./pages";
+import Footer from "./pages/globalComponents/footer/Footer";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
+            <Footer />
         </div>
     );
 }
