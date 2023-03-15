@@ -1,5 +1,3 @@
 import styled from "styled-components";
 
-export const HomeStyle = styled.div`
-    background-color: white;
-`;
+export const HomeStyle = styled.div``;

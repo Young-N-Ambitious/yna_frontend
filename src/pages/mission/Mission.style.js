@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
-
 export const MissionStyle = styled.div`
-background-color: #6f6e6a;
-color: white;
-text-align: left;
-padding: 2% 0 2% 5%;
-#mission-statement {
-    p {
-        width: 70%
-    }
-    h1 {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-}
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 `;
