@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const JoinStyle = styled.div`
+export const LoginStyle = styled.div`
     background-color: white;
 `;

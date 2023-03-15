@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.div`
-    background-color: #ffd644;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    .sectionContainer {
+        background-color: #ffd644;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 46px;
+    }
     .footercontainer {
         font-weight: bold;
         height: 46px;
