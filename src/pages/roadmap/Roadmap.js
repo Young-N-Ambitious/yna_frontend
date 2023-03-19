@@ -6,7 +6,8 @@ const Roadmap = () => {
             <RoadmapStyle>
                 <div id='roadmap'>
                     <h1>Roadmap</h1>
-                    <p>This will be where the roadmap timeline will be placed.</p>
+                    <p>This will be where the roadmap timeline will be placed.<br></br><br></br>
+                    </p>
                 </div>
             </RoadmapStyle>
             )

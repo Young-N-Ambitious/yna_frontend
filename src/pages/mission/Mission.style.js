@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const MissionStyle = styled.div`
-background-color: #6f6e6a;
 color: white;
 text-align: left;
 padding: 2% 0 2% 5%;
