@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { NavStyle } from "./NavBar.style";
-import ynalogo from "../../assets/ynalogo.png"
+import ynalogo from "../../../assets/ynalogo.png"
 import Modal from "./modal";
 
 function NavBar() {
