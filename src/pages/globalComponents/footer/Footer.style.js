@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.div`
-    background-color: #ffd644;
+    position: abosolute;
     width: 100%;
-    position: absolute;
     bottom: 0;
+    left: 0;
+    height: 46px;
+    .sectionContainer {
+            background-color: #ffd644;
+            position: relative;
+        }
     .footercontainer {
         font-weight: bold;
         height: 46px;
@@ -20,4 +25,10 @@ export const FooterStyle = styled.div`
     .linkspace {
         margin-right: 22px;
     }
+    @media screen and (min-height: 1000px) {
+        FooterStyle {
+          display: block;
+        }
+      }
 `;
+

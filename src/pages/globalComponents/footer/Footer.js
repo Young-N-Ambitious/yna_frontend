@@ -6,7 +6,7 @@ import { FooterStyle } from "./Footer.style.js";
 const Footer = () => {
     return (
         <FooterStyle>
-            <footer>
+            <footer className="sectionContainer">
                 <div className="footercontainer">
                     <span>© 2022 YOUNG N AMBITIOUS 2022</span>
                     <div className="links">

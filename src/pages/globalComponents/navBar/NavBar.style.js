@@ -18,4 +18,20 @@ export const NavStyle = styled.div`
     .linkpadding {
         padding: 20px 20px 13px 20px;
     }
+    @media (max-width: 700px) {
+        .navlinks {
+            display: none;
+        }
+        .mobileLinks {
+            display: block;
+        }
+    }
+    @media (min-width: 700px) {
+        .navlinks {
+            display: block;
+        }
+        .mobileLinks {
+            display: none;
+        }
+    }
 `;
