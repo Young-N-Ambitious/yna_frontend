@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ynalogo from "../../../assets/ynalogo.png"
 import { NavLink } from "react-router-dom";
 
 const ModalOverlay = styled.div`
@@ -100,7 +101,7 @@ const Modal = ({ open, onClose }) => {
         <ModalOverlay open={open} onClick={handleClickOutside}>
             <ModalContent open={open}>
                 <CloseButtonRow>
-                    <TextPlaceholder>YNA LOGO</TextPlaceholder>
+                    <TextPlaceholder> <img src={ynalogo} alt="yna logo" /></TextPlaceholder>
                     <CloseButtonContainer onClick={onClose}>
                         <CloseButton>
                             <svg

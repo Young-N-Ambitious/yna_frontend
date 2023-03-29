@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { NavStyle } from "./NavBar.style";
+import ynalogo from "../../../assets/ynalogo.png"
 import Modal from "./modal";
 
 function NavBar() {
@@ -22,7 +23,7 @@ function NavBar() {
             <section>
                 <div className="navcontainer">
                     <Link className="linkstyle" to="/">
-                        YNA LOGO
+                        <img src={ynalogo} alt="yna logo" />
                     </Link>
                     <div className="navlinks">
                         <NavLink
