@@ -23,4 +23,4 @@ jobs:
         run: npm install
       -
         name: Release and deploy with Dagger
-        run: node ci/main.mjs
+        run: node ci/index.mjs
