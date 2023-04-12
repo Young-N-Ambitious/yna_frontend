@@ -1,21 +1,17 @@
 import React from "react";
-import { MissionStyle } from "./Mission.style";
+import "./Mission.css";
 const Mission = () => {
-
-
-    return (
-            <MissionStyle>
-                <div id='mission-statement'>
-                    <h1>Mission</h1>
-                    <p>YNA plans to help an infinite amount of minorities 
-                        break into tech by providing professional guidance 
-                        and resources through personal development, 
-                        community, and open source.
-                    </p>
-                </div>
-            </MissionStyle>
-            )
-            
+  return (
+    <div class="mission-statement">
+      <div class="center-item">
+        <p className="yna-plans-to">
+          YNA plans to help an infinite amount of minorities break into tech by
+          providing professional guidance and resources through personal
+          development, community, and open source.
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Mission;
