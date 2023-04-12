@@ -14,7 +14,7 @@ const Mission = () => {
           </p>
         </div>
       </div>
-      <ColoredLine color="#ffd644" />
+      <ColoredLine color="#ffd644" height={2} width="35%" />
     </>
   );
 };

@@ -1,15 +1,15 @@
 import React from "react";
 
-const ColoredLine = ({ color }) => (
+const ColoredLine = ({ color, width, height }) => (
   <hr
     style={{
       display: "block",
       color: color,
       backgroundColor: color,
-      height: 5,
+      height: height,
       margin: "auto",
       // textAlign: "center",
-      width: "35%",
+      width: width,
     }}
   />
 );
