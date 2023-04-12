@@ -1,22 +1,22 @@
 .mission-statement {
-  /* border: 5px solid #ffcc5c; */
+  text-align: center;
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
+  color: white;
+}
+
+.our-mission {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .container > div {
   padding: 10px;
   text-align: center;
-  font-size: 2em;
-  color: #ffeead;
 }
 
 .yna-plans-to {
   font-size: 32px;
-  text-align: center;
   font-weight: 300;
-  color: white;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
