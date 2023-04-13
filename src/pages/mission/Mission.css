@@ -1,0 +1,22 @@
+.mission-statement {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.our-mission {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container > div {
+  padding: 10px;
+  text-align: center;
+}
+
+.yna-plans-to {
+  font-size: 32px;
+  font-weight: 300;
+}
