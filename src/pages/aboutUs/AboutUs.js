@@ -13,7 +13,7 @@ import Stefanie from '../../assets/foundingMembers/Stefanie.jpeg'
 export default function AboutUs() {
     const foundingMember = {
         picture: Syd,
-        name: "Sydnee Sampsom",
+        name: "Sydnee Sampson",
         title: "Founder",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
     };
@@ -72,26 +72,32 @@ export default function AboutUs() {
             <div className="whoAre">
                 <h1>About Us</h1>
                 <h2>Who are we?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
         </section>
         <section>
-            <h2>THE TEAM</h2>
+            <h2 className="team">THE TEAM</h2>
+            <h2>Founder</h2>
             <div className="hero">
-                <div>
+                <div className="founderLeftDiv">
                     <img src={foundingMember.picture} alt={foundingMember.name} />
                     <h3>{foundingMember.name}</h3>
                     <hr/>
                     <h4>{foundingMember.title}</h4>
                 </div>
 
-                <div>
+                <div className="descriptionDiv">
                     <p>{foundingMember.description}</p>
                 </div>
             </div>
         </section>
         <section>
-            <h2>Our Team Members</h2>
+            <h2>Founding Members</h2>
             <div className="team-members">
                 {teamMembers.map((member, index) => (
                     <div key={index} className="member">
