@@ -1,10 +1,18 @@
 import React from "react";
 import NavBar from "../globalComponents/navBar/NavBar";
 import { AboutStyle } from "./AboutUs.style.js";
+import Syd from '../../assets/foundingMembers/syd.jpg'
+import Danielle from '../../assets/foundingMembers/Danielle.jpeg'
+import LaNice from '../../assets/foundingMembers/LaNice.jpeg'
+import Diarte from '../../assets/foundingMembers/Diarte.jpeg'
+import Nicole from '../../assets/foundingMembers/Nicole.jpeg'
+import Anika from '../../assets/foundingMembers/Anika.jpeg'
+import Chaya from '../../assets/foundingMembers/Chaya.jpeg'
+import Stefanie from '../../assets/foundingMembers/Stefanie.jpeg'
 
 export default function AboutUs() {
     const foundingMember = {
-        picture: "./assets/syd.jpg",
+        picture: Syd,
         name: "Sydnee Sampsom",
         title: "Founder",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
@@ -12,43 +20,43 @@ export default function AboutUs() {
 
     const teamMembers = [
         {   
-            picture: "",
+            picture: Danielle,
             name: "Danielle Madry",
             title: "Founding Member",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
-            picture: "",
+            picture: LaNice,
             name: "LaNice Powell",
             title: "Founding Member",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
-            picture: "",
+            picture: Diarte,
             name: "Diarte Jeffcoat",
             title: "Founding Member",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
-            picture: "",
+            picture: Nicole,
             name: "Nicole Lucien",
             title: "Founding Member",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
-            picture: "",
+            picture: Anika,
             name: "Anika C",
             title: "Founding Member",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
-            picture: "",
+            picture: Chaya,
             name: "Chaya Deaver",
             title: "Founding Member",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
-            picture: "",
+            picture: Stefanie,
             name: "Stefanie Davis",
             title: "Founding Member",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
@@ -57,22 +65,29 @@ export default function AboutUs() {
     ];
 
     return (
-        <AboutStyle>
         <div>
             <NavBar />
-            <h1>About Us</h1>
-        </div>
+        <AboutStyle>
         <section>
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque.</p>
+            <div className="whoAre">
+                <h1>About Us</h1>
+                <h2>Who are we?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque.</p>
+            </div>
         </section>
         <section>
-            <h2>The Team</h2>
+            <h2>THE TEAM</h2>
             <div className="hero">
-                <img src={foundingMember.picture} alt={foundingMember.name} />
-                <h3>{foundingMember.name}</h3>
-                <h4>{foundingMember.title}</h4>
-                <p>{foundingMember.description}</p>
+                <div>
+                    <img src={foundingMember.picture} alt={foundingMember.name} />
+                    <h3>{foundingMember.name}</h3>
+                    <hr/>
+                    <h4>{foundingMember.title}</h4>
+                </div>
+
+                <div>
+                    <p>{foundingMember.description}</p>
+                </div>
             </div>
         </section>
         <section>
@@ -90,9 +105,13 @@ export default function AboutUs() {
             </div>
         </section>
         <section>
-            <h2>Why Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque.</p>
+            <div className="whyUs">
+                <h2>Why us?</h2>
+                <h3>What we do</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque.</p>
+            </div>
         </section>
     </AboutStyle>
+                </div>
     );
 }
