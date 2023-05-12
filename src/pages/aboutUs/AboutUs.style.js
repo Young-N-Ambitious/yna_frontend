@@ -35,6 +35,7 @@ export const AboutStyle = styled.div`
         .whoAre {
             padding: 10px 30px;
             background-color: black;
+            font-family: 'Inter';
             h2 {
                 color: #FFC700;
             }
@@ -64,7 +65,7 @@ export const AboutStyle = styled.div`
 
             .founderLeftDiv {
                 width: 40%;
-                height: 100%;
+                height: 16rem;
                 padding: 10px;
                 
             }
@@ -78,23 +79,34 @@ export const AboutStyle = styled.div`
                 height: 150px;
                 border-radius: 50%;
                 margin-right: 1rem;
-                
+                margin-bottom: 5px;
             }
 
             hr {
-                border: 2px solid #FFFFFF;
+                border: 1px solid #FFFFFF;
                 width: 70%;
             }
 
             h3 {
+                font-family: 'Prosto One';
                 font-size: 1.2rem;
                 margin-bottom: 0.5rem;
+                margin-top: 2px
             }
 
             h4 {
-                font-size: 1rem;
                 margin-bottom: 0.5rem;
                 color: #FFC700;
+                font-family: 'Prompt';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 40px;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.100em;
+                color: #FFD644;
+                margin-top: -4px;
             }
 
             p {
@@ -152,23 +164,29 @@ export const AboutStyle = styled.div`
                 }
 
                 hr {
-                    border: 2px solid #FFFFFF;
+                    border: 1px solid #FFFFFF;
                     width: 70%;
                 }
                 
                 h3 {
                     font-size: 1.2rem;
                     margin-bottom: 0.5rem;
+                    font-family: 'Poppins';
                 }
                 
                 h4 {
                     color: #FFD644;
                     font-size: 1rem;
-                    margin-bottom: 0.5rem;
+                    margin: 0.5rem -20px;
+                    font-family: 'Prosto One';
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
                 }
 
                 p {
                     font-size: 1rem;
+                    font-family: 'Poppins';
                 }
 
                 transition: box-shadow 0.3s ease; /* Added transition */
@@ -193,6 +211,7 @@ export const AboutStyle = styled.div`
         .whyUs {
             padding: 10px 30px;
             background-color: black;
+            font-family: 'Inter';
             h3 {
                 font-size: 1.2rem;
                 margin-bottom: 0.5rem;
