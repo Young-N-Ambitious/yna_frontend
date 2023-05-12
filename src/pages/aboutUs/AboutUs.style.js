@@ -13,7 +13,6 @@ export const AboutStyle = styled.div`
     section {
         width: 100%;
         max-width: 80rem;
-        // margin-bottom: 2rem;
 
         h2 {
             font-size: 1.5rem;
@@ -21,7 +20,6 @@ export const AboutStyle = styled.div`
         }
 
         .team {
-
             font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
@@ -31,7 +29,6 @@ export const AboutStyle = styled.div`
             align-items: center;
             text-align: center;
             text-shadow: -5px 2px 5px black;
-
             color: #FFFFFF;
         }
         
@@ -44,26 +41,20 @@ export const AboutStyle = styled.div`
         }
 
         .hero {
-            // display: flex;
             display: flex;
-            // justify-content: space-evenly;
-            // flex-wrap: wrap;
             text-align: center;
-            // align-items: center;
             padding: 10px;
-            // width: 80%;
 
             h4 {
                 animation: color-change 1s infinite;
-              }
+            }
               
-              @keyframes color-change {
+            @keyframes color-change {
                 0% { color: #fafa6e; }
                 50% { color: #fde536; }
                 100% { color: #fed60b; }
-              }
+            }
 
-        
             .descriptionDiv {
                 background-color: black;
                 width: 60%;
@@ -110,7 +101,6 @@ export const AboutStyle = styled.div`
                 font-size: 1rem;
             }
 
-
             @media (max-width: 787px) {
 
                 display: flex;
@@ -135,10 +125,8 @@ export const AboutStyle = styled.div`
             }
             
         }
+
         .team-members {
-            // display: grid;
-            // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            // grid-gap: 1rem;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -192,13 +180,13 @@ export const AboutStyle = styled.div`
 
             h4 {
                 animation: color-change 1s infinite;
-              }
+            }
               
-              @keyframes color-change {
+            @keyframes color-change {
                 0% { color: #fafa6e; }
                 50% { color: #fde536; }
                 100% { color: #fed60b; }
-              }
+            }
 
         }
 
@@ -210,12 +198,6 @@ export const AboutStyle = styled.div`
                 margin-bottom: 0.5rem;
                 color: #FFC700;
             }
-            
         }
-
-
-
-
-
     }
 `;
