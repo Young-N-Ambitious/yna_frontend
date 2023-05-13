@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../globalComponents/navBar/NavBar";
 import { AboutStyle } from "./AboutUs.style.js";
+import WhyUs from "../whyUs/WhyUs";
 import Syd from '../../assets/foundingMembers/syd.jpg'
 import Danielle from '../../assets/foundingMembers/Danielle.jpeg'
 import LaNice from '../../assets/foundingMembers/LaNice.jpeg'
@@ -112,9 +113,7 @@ export default function AboutUs() {
         </section>
         <section>
             <div className="whyUs">
-                <h2>Why us?</h2>
-                <h3>What we do</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque.</p>
+               <WhyUs></WhyUs>
             </div>
         </section>
     </AboutStyle>
