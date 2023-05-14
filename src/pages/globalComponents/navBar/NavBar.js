@@ -41,20 +41,13 @@ function NavBar() {
                         >
                             About
                         </NavLink>
-                        <NavLink
+                        {/* <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/members"
                         >
                             Members
-                        </NavLink>
-                        <NavLink
-                            className="linkpadding linkstyle"
-                            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                            to="/contact-us"
-                        >
-                            Contact
-                        </NavLink>
+                        </NavLink> */}
                         <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -65,10 +58,17 @@ function NavBar() {
                         <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                            to="/contact-us"
+                        >
+                            Contact
+                        </NavLink>
+                        {/* <NavLink
+                            className="linkpadding linkstyle"
+                            style={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/login"
                         >
                             Login
-                        </NavLink>
+                        </NavLink> */}
                     </div>
                     <div className="mobileLinks">
                         <a href="#menu" onClick={handleOpenModal}>
