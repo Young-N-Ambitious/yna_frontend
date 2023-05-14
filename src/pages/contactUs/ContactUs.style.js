@@ -12,7 +12,7 @@ export const ContactStyle = styled.div`
     
         .contact {
             padding: 10px 30px;
-            background-color: gray;
+            background-color: black;
             // will change color once i update the icon colors
             font-family: 'Inter';
             h2 {
@@ -21,5 +21,6 @@ export const ContactStyle = styled.div`
             iframe {
                 display: block;
                 margin: auto;
-            }
+            } 
+            text-align: center;  
     `;
