@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../globalComponents/navBar/NavBar";
 import { AboutStyle } from "./AboutUs.style.js";
+import WhoAreWe from "../whoAreWe/WhoAreWe";
 import Syd from '../../assets/foundingMembers/syd.jpg'
 import Danielle from '../../assets/foundingMembers/Danielle.jpeg'
 import LaNice from '../../assets/foundingMembers/LaNice.jpeg'
@@ -70,14 +71,7 @@ export default function AboutUs() {
         <AboutStyle>
         <section>
             <div className="whoAre">
-                <h1>About Us</h1>
-                <h2>Who are we?</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <WhoAreWe></WhoAreWe>
             </div>
         </section>
         <section>
