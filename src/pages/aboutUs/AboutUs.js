@@ -32,7 +32,7 @@ export default function AboutUs() {
             picture: Danielle,
             name: "Danielle Madry",
             title: "Project Manager",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
+            description: "Danielle Madry is mainly a self taught software developer with experience in the gaming and technology industry. Her specializations include Data Analytics and Project Management."
         },
         {   
             picture: LaNice,
@@ -68,7 +68,7 @@ export default function AboutUs() {
             picture: Stefanie,
             name: "Stefanie Davis",
             title: "Senior Data Engineer",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
+            description: "Senior data engineer with experience building data products for Nike, Amazon, and the U.S Government. Passionate about continuous learning and building in community."
         },
         // Add more team members here
     ];
