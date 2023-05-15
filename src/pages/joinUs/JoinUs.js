@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../globalComponents/navBar/NavBar";
 import { JoinStyle } from "./JoinUs.style.js";
+import ContactPopUp from "../globalComponents/contactPopUp/ContactPopUp";
 
 const JoinUs = () => {
   return (

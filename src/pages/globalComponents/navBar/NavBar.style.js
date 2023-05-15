@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const NavStyle = styled.div`
     background-color: #ffd644;
+    html {
+        scroll-behavior: smooth;
+      }
     .navcontainer {
         display: flex;
         justify-content: space-between;
