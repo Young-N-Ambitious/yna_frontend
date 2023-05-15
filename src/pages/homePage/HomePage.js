@@ -13,7 +13,9 @@ const HomePage = () => {
                 <NavBar />
                 <LandingPic />
                 <Mission />
-                <AboutUS />
+                <section id="about-us">
+                    <AboutUS />
+                </section>
                 <Roadmap />
                 <ContactPopUp/>
 

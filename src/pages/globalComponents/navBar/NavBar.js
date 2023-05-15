@@ -20,27 +20,29 @@ function NavBar() {
     };
     return (
         <NavStyle>
-            <section>
+            <nav>
                 <div className="navcontainer">
                     <Link className="linkstyle" to="/">
                         <img src={ynalogo} alt="yna logo" />
                     </Link>
                     <div className="navlinks">
-                        <NavLink
+                        
+                       <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                            to="/"
+                            to="/#"
                             end
                         >
                             Home
-                        </NavLink>
-                        <NavLink
+                        </NavLink> 
+                       {/* <Link */}
+                       <a
                             className="linkpadding linkstyle"
-                            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                            to="/about-us"
+                            // style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                         href="#about-us" 
                         >
                             About
-                        </NavLink>
+                        </a> 
                         {/* <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -50,7 +52,7 @@ function NavBar() {
                         </NavLink> */}
                         <NavLink
                             className="linkpadding linkstyle"
-                            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                            // style={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/join-us"
                         >
                             Join
@@ -69,6 +71,7 @@ function NavBar() {
                         >
                             Login
                         </NavLink> */}
+                        
                     </div>
                     <div className="mobileLinks">
                         <a href="#menu" onClick={handleOpenModal}>
@@ -93,7 +96,8 @@ function NavBar() {
                     </div>
                     <Modal open={modalOpen} onClose={handleCloseModal} />
                 </div>
-            </section>
+            </nav>
+
         </NavStyle>
     );
 }
