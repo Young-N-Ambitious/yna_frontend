@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../globalComponents/navBar/NavBar";
+// import NavBar from "../globalComponents/navBar/NavBar";
 import { AboutStyle } from "./AboutUs.style.js";
 import WhyUs from "../whyUs/WhyUs";
 import WhoAreWe from "../whoAreWe/WhoAreWe";
@@ -69,7 +69,7 @@ export default function AboutUs() {
 
     return (
         <div>
-            <NavBar />
+            {/* <NavBar /> */}
             <ContactPopUp />
         <AboutStyle>
         <section>
