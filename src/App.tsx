@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter,  Outlet } from "react-router-dom";
 import { HomePage, AboutUs, ContactUs, JoinUs, Members, Login, NotFound } from "./pages";
 import Footer from "./pages/globalComponents/footer/Footer";
 
@@ -8,15 +8,23 @@ function App() {
         <div className="">
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/about-us" element={<AboutUs />} />
+                    {/* <Route path="/" element={<HomePage />} /> */}
+
+                    <Route path="/" element={<HomePage/>}>
+                     {/* <Route path="/about-us" element={<AboutUs />} /> */}
+
+                     <Route path="/#about-us" element={<AboutUs />} />
+                     <Route path="/about-us" element={<AboutUs />} />
+                     </Route>
+
+                    {/* <Route path="/about-us" element={<AboutUs />} /> */}
                     <Route path="/contact-us" element={<ContactUs />} />
                     <Route path="/join-us" element={<JoinUs />} >
-                        <Route path="about-us" element={<AboutUs/>} 
+                        {/* <Route path="about-us" element={<AboutUs/>} 
                         
                         />
                         path="/redirect"
-                    element={ <Navigate to="/error-page" /> }
+                    element={ <Navigate to="/error-page" /> } */}
                     </Route>
 
                     <Route path="/members" element={<Members />} />

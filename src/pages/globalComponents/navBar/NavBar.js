@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'
 import { NavStyle } from "./NavBar.style";
 import ynalogo from "../../../assets/ynalogo.png"
 import Modal from "./modal";
@@ -35,14 +36,12 @@ function NavBar() {
                         >
                             Home
                         </NavLink> 
-                       {/* <Link */}
-                       <a
-                            className="linkpadding linkstyle"
-                            // style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                         href="#about-us" 
-                        >
-                            About
-                        </a> 
+
+                        <HashLink smooth to="/#about-us"   className="linkpadding linkstyle" >
+                         About Us
+                         </HashLink>
+        
+         
                         {/* <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -52,7 +51,7 @@ function NavBar() {
                         </NavLink> */}
                         <NavLink
                             className="linkpadding linkstyle"
-                            // style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                            style={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/join-us"
                         >
                             Join

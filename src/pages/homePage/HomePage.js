@@ -13,9 +13,9 @@ const HomePage = () => {
                 <NavBar />
                 <LandingPic />
                 <Mission />
-                <section id="about-us">
-                    <AboutUS />
-                </section>
+                <div className="section" id="about-us">
+                 <AboutUS />
+               </div>
                 <Roadmap />
                 <ContactPopUp/>
 
