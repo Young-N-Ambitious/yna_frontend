@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../globalComponents/navBar/NavBar";
+// import NavBar from "../globalComponents/navBar/NavBar";
 import { AboutStyle } from "./AboutUs.style.js";
 import WhyUs from "../whyUs/WhyUs";
 import WhoAreWe from "../whoAreWe/WhoAreWe";
@@ -11,7 +11,7 @@ import Nicole from '../../assets/foundingMembers/Nicole.jpeg'
 import Anika from '../../assets/foundingMembers/Anika.jpeg'
 import Chaya from '../../assets/foundingMembers/Chaya.jpeg'
 import Stefanie from '../../assets/foundingMembers/Stefanie.jpeg'
-import ContactPopUp from "../globalComponents/contactPopUp/ContactPopUp";
+// import ContactPopUp from "../globalComponents/contactPopUp/ContactPopUp";
 
 export default function AboutUs() {
     const foundingMember = {
@@ -69,8 +69,8 @@ export default function AboutUs() {
 
     return (
         <div>
-            <NavBar />
-            <ContactPopUp />
+            {/* <NavBar /> */}
+            {/* <ContactPopUp /> */}
         <AboutStyle>
         <section>
             <div className="whoAre">

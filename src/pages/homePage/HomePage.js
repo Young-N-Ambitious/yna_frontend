@@ -5,7 +5,7 @@ import NavBar from "../globalComponents/navBar/NavBar";
 import LandingPic from "../landingpic/LandingPic";
 import { HomeStyle } from "./HomePage.style.js";
 import ContactPopUp from "../globalComponents/contactPopUp/ContactPopUp";
-
+import AboutUS from "../aboutUs/AboutUs";
 const HomePage = () => {
     return (
         <HomeStyle>
@@ -13,6 +13,9 @@ const HomePage = () => {
                 <NavBar />
                 <LandingPic />
                 <Mission />
+                <div className="section" id="about-us">
+                 <AboutUS />
+               </div>
                 <Roadmap />
                 <ContactPopUp/>
 
