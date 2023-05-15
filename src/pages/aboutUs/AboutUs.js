@@ -17,7 +17,7 @@ export default function AboutUs() {
     const foundingMember = {
         picture: Syd,
         name: "Sydnee Sampson",
-        title: "Founder",
+        title: "Software Engineer",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
     };
 
@@ -25,43 +25,43 @@ export default function AboutUs() {
         {   
             picture: Danielle,
             name: "Danielle Madry",
-            title: "Founding Member",
+            title: "Project Manager",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
             picture: LaNice,
             name: "LaNice Powell",
-            title: "Founding Member",
+            title: "Software Engineer",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
             picture: Diarte,
             name: "Diarte Jeffcoat",
-            title: "Founding Member",
+            title: "Associate Consultant",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
             picture: Nicole,
             name: "Nicole Lucien",
-            title: "Founding Member",
+            title: "Software Engineer",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
             picture: Anika,
             name: "Anika C",
-            title: "Founding Member",
+            title: "Customer Success Manager",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
             picture: Chaya,
             name: "Chaya Deaver",
-            title: "Founding Member",
+            title: "Software Engineer",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         {   
             picture: Stefanie,
             name: "Stefanie Davis",
-            title: "Founding Member",
+            title: "Senior Data Engineer",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
         },
         // Add more team members here
