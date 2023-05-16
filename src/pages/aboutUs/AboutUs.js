@@ -38,13 +38,13 @@ export default function AboutUs() {
             picture: LaNice,
             name: "LaNice Powell",
             title: "Software Engineer",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
+            description: "LaNice Powell is a former Junior Highschool Teacher that began her trandition to tech in 2019. Through hard work and dedication with the continued support of YNA squad she was able to achieve her goals and was employed as an Associate Software Engineer in April 2021 at Newsela. Currently she has been promoted to mid level Engineer and is also a boot camp instructor at BrainStation."
         },
         {   
             picture: Diarte,
             name: "Diarte Jeffcoat",
             title: "Associate Consultant",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
+            description: "Diarte started out working on his pursuits in the media industry, but soon found the world of tech through YNA. Since then, he has been growing as a tech consultant with a specialty in software testing and quality engineering."
         },
         {   
             picture: Nicole,
@@ -62,7 +62,7 @@ export default function AboutUs() {
             picture: Chaya,
             name: "Chaya Deaver",
             title: "Software Engineer",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
+            description: "I started my tech journey through Career Karma in 2019. I graduated Flatiron School in 2020 and landed my current role as a software engineer at SharpSpring (now part of Constant Contact) in 2021."
         },
         {   
             picture: Stefanie,
