@@ -56,13 +56,13 @@ export default function AboutUs() {
             picture: Anika,
             name: "Anika C",
             title: "Customer Success Manager",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
+            description: "Anika Christopher is a Customer Success Manager in her second year working in the data ecosystem. Combining past experience from a 12 year career in client facing roles, with acquired technical skills, she pivoted into the tech industry working in a non-development role where she engages with and strategically advises customers in the mid-market to enterprise segment."
         },
         {   
             picture: Chaya,
             name: "Chaya Deaver",
             title: "Software Engineer",
-            description: "I started my tech journey through Career Karma in 2019. I graduated Flatiron School in 2020 and landed my current role as a software engineer at SharpSpring (now part of Constant Contact) in 2021."
+            description: "Chaya started her tech journey through Career Karma in 2019. She graduated Flatiron School in 2020 and landed her current role as a software engineer at SharpSpring (now part of Constant Contact) in 2021."
         },
         {   
             picture: Stefanie,
