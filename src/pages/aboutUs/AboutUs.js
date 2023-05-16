@@ -13,7 +13,6 @@ import Chaya from '../../assets/foundingMembers/Chaya.jpeg'
 import Stefanie from '../../assets/foundingMembers/Stefanie.jpeg'
 import yellowTwitter from "../../assets/yellowTwitterIcon.png"
 import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
-import yellowGithub from "../../assets/yellowGithubIcon.png";
 // import ContactPopUp from "../globalComponents/contactPopUp/ContactPopUp";
 
 export default function AboutUs() {
