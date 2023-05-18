@@ -3,7 +3,7 @@ import React from "react";
 import { AboutStyle } from "./AboutUs.style.js";
 import WhyUs from "../whyUs/WhyUs";
 import WhoAreWe from "../whoAreWe/WhoAreWe";
-import Syd from '../../assets/foundingMembers/syd.jpg'
+import Syd from '../../assets/foundingMembers/Sydnee2.PNG'
 import Danielle from '../../assets/foundingMembers/Danielle.jpeg'
 import LaNice from '../../assets/foundingMembers/LaNice.jpeg'
 import Diarte from '../../assets/foundingMembers/Diarte.jpeg'
@@ -19,9 +19,8 @@ export default function AboutUs() {
         picture: Syd,
         name: "Sydnee Sampson",
         title: "Software Engineer",
-        description: "Software engineer and entrepreneur who started taking care of themselves at 16 years old. Grew up in East Oakland Ca and was always math and goal oriented as a child. My first business was my own cleaning company in San Francisco at 17 y/o. Now I am a 25 y/o Custom Software Engineer at Accenture, a global speaker and building my own company, ShipTechPrints. My goal is to teach my family how to create and keep generational wealth.I believe in storytelling. I will continue to tell my story through building projects that can uplift marginalized communities and developing in open-source.",
-        // linked_in: <a href="https://www.linkedin.com/in/sydnee-sampson/" target="_blank" rel="noreferrer"> <img src={yellowLinkedin} alt="LinkedIn" /></a>,
-        // twitter: <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer"> <img src={yellowTwitter} alt="Twitter" /></a>, 
+        description: 
+      "Sydnee is the Founder and CTO of YNA. They have a background in building technical communities and managing engineers and products. Sydnee grew a passion for leading people to success through their experience with entrepreneurship at a very young age. While managing this open source community, they were able to lead a team of engineers through coding bootcamps, teach them how to contribute to open source projects, and help them secure jobs in the end. Sydnee has turned YNA into a community building ecosystem that has proven results. From Custom Engineering as an Consultant at Accenture, they have widened their exposure to different tools and technologies that play a huge role in how they maintain a big community with a wide range of talent.", 
     };
 
     const teamMembers = [
