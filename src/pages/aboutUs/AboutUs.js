@@ -18,7 +18,7 @@ export default function AboutUs() {
     const foundingMember = {
         picture: Syd,
         name: "Sydnee Sampson",
-        title: "Software Engineer",
+        title: "Engineering Manager",
         description: 
       "Sydnee is the Founder and CTO of YNA. They have a background in building technical communities and managing engineers and products. Sydnee grew a passion for leading people to success through their experience with entrepreneurship at a very young age. While managing this open source community, they were able to lead a team of engineers through coding bootcamps, teach them how to contribute to open source projects, and help them secure jobs in the end. Sydnee has turned YNA into a community building ecosystem that has proven results. From Custom Engineering as an Consultant at Accenture, they have widened their exposure to different tools and technologies that play a huge role in how they maintain a big community with a wide range of talent.", 
     };
