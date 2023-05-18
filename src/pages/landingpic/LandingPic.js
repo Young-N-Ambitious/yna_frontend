@@ -1,17 +1,16 @@
 import React from "react";
 
-import ynalandingpic from "../../assets/ynalandingpic(1).png";
+import ynalandingpic from "../../assets/ynalandingpic.jpg";
 import { LandingPicStyle } from "./LandingPic.style.js";
-
 
 const LandingPic = () => {
     return (
-      <LandingPicStyle>
+        <LandingPicStyle>
             <div>
                 <img src={ynalandingpic} alt="landingpic" />
             </div>
-            </LandingPicStyle>
-    )
+        </LandingPicStyle>
+    );
 };
 
 export default LandingPic;
