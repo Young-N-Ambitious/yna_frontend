@@ -1,38 +1,37 @@
 import styled from "styled-components";
 
 export const JoinStyle = styled.div`
-background-color: #6A6863;
-color: #FFFFFF;  
-height: 90vh; 
+  background-color: white;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #6a6863;
+  color: #ffffff;
 
-    .join-us {
-        position: relative;
-        width: 100%;
-        height: 90%;
-        overflow: hidden;
-        h2 {
-            color: #FFC700;
-        }  
-        .responsive-iframe {
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 120%;
-            border: none;
-        } 
-        text-align: center;  
-        @media (max-width: 700px) {
-            .responsive-iframe{
-               position: absolute; 
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                border: none;
-            } 
-        }
-   
+  .join-us {
+    padding: 10px 30px;
+    background-color: black;
+    // will change color once i update the icon colors
+    font-family: "Inter";
+    h2 {
+      color: #ffc700;
+    }
+    iframe {
+      display: block;
+      margin: auto;
+    }
+    text-align: center;
+  }
+
+  @media (max-width: 700px) {
+    .contact {
+      width: 100%;
+    }
+    .form {
+      width: 100%;
+    }
+  }
 `;

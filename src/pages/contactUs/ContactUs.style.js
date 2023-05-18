@@ -1,26 +1,37 @@
 import styled from "styled-components";
 
 export const ContactStyle = styled.div`
-    background-color: white;font-family: 'Inter';
+    background-color: white;
+    font-family: "Inter";
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px;
-    background-color: #6A6863;
-    color: #FFFFFF;   
-    
+    background-color: #6a6863;
+    color: #ffffff;
+
+    .contact {
+        padding: 10px 30px;
+        background-color: black;
+        // will change color once i update the icon colors
+        font-family: "Inter";
+        h2 {
+            color: #ffc700;
+        }
+        iframe {
+            display: block;
+            margin: auto;
+        }
+        text-align: center;
+    }
+
+    @media (max-width: 700px) {
         .contact {
-            padding: 10px 30px;
-            background-color: black;
-            // will change color once i update the icon colors
-            font-family: 'Inter';
-            h2 {
-                color: #FFC700;
-            }  
-            iframe {
-                display: block;
-                margin: auto;
-            } 
-            text-align: center;  
-    `;
+            width: 100%;
+        }
+        .form {
+            width: 100%;
+        }
+    }
+`;
