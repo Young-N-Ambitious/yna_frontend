@@ -1,0 +1,97 @@
+#title {
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+}
+
+#card1 {
+    width: 470px;
+    height: 185px;
+    
+    background-color: black;
+    
+    border: 3px solid #FFD644;
+    display: flex;
+}
+
+#name {
+    color: #FFFFFF;
+    font-size: 29px;
+    font-weight: 700;
+    /* line-height: 34.31px; */
+}
+
+#job-title {
+    color: #FFD644;
+    font-weight: 700;
+    font-size: 20px;
+    /* line-height: 24px; */
+    padding-top: 0;
+
+}
+
+#icon1 {
+    width: 121px;
+    height: 126px;
+    padding-top: 35px;
+    padding-left: 25px;
+    padding-bottom: 24px;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+
+#email {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* padding-bottom: 27; */
+
+}
+
+#words {
+    padding-top: 35;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+    justify-items: center;
+    /* align-content: center;
+    justify-content: center; */
+    /* align-items: center; */
+}
+
+#card2 {
+    width: 470px;
+    height: 185px;
+    background-color: black;
+    /* border-color: #FFD644; */
+    border: 3px solid #FFD644;
+    display: flex;
+}
+
+#card3 {
+    width: 470px;
+    height: 185px;
+    background-color: black;
+    /* border-color: #FFD644; */
+    border: 3px solid #FFD644;
+    display: flex;
+}
+
+#card4 {
+    width: 470px;
+    height: 185px;
+    background-color: black;
+    /* border-color: #FFD644; */
+    border: 3px solid #FFD644;
+    display: flex;
+}
+
+#icons {
+    padding-top: 150px;
+}

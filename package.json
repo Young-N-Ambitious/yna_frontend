@@ -45,5 +45,10 @@
   },
   "devDependencies": {
     "@dagger.io/dagger": "^0.4.2"
-  }
+  },
+  "description": "YNA plans to help an infinite amount of minorities break into tech by providing professional guidance and resources through personal development, community, and open source.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
