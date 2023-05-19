@@ -8,7 +8,7 @@ const Footer = () => {
         <FooterStyle>
             <footer className="sectionContainer">
                 <div className="footercontainer">
-                    <span>© 2022 YOUNG N AMBITIOUS 2022</span>
+                    <span>© 2023 YOUNG N AMBITIOUS</span>
                     <div className="links">
                         <a className="linkspace" href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
                             <img src={twitter} alt="Twitter" />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'
 import { NavStyle } from "./NavBar.style";
 import ynalogo from "../../../assets/ynalogo.png"
 import Modal from "./modal";
@@ -20,41 +21,34 @@ function NavBar() {
     };
     return (
         <NavStyle>
-            <section>
+            <nav>
                 <div className="navcontainer">
                     <Link className="linkstyle" to="/">
                         <img src={ynalogo} alt="yna logo" />
                     </Link>
                     <div className="navlinks">
-                        <NavLink
+                        
+                       <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                            to="/"
+                            to="/#"
                             end
                         >
                             Home
-                        </NavLink>
-                        <NavLink
-                            className="linkpadding linkstyle"
-                            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                            to="/about-us"
-                        >
-                            About
-                        </NavLink>
-                        <NavLink
+                        </NavLink> 
+
+                        <HashLink smooth to="/#about-us"   className="linkpadding linkstyle" >
+                         About Us
+                         </HashLink>
+        
+         
+                        {/* <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/members"
                         >
                             Members
-                        </NavLink>
-                        <NavLink
-                            className="linkpadding linkstyle"
-                            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                            to="/contact-us"
-                        >
-                            Contact
-                        </NavLink>
+                        </NavLink> */}
                         <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -65,10 +59,18 @@ function NavBar() {
                         <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                            to="/contact-us"
+                        >
+                            Contact
+                        </NavLink>
+                        {/* <NavLink
+                            className="linkpadding linkstyle"
+                            style={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/login"
                         >
                             Login
-                        </NavLink>
+                        </NavLink> */}
+                        
                     </div>
                     <div className="mobileLinks">
                         <a href="#menu" onClick={handleOpenModal}>
@@ -93,7 +95,8 @@ function NavBar() {
                     </div>
                     <Modal open={modalOpen} onClose={handleCloseModal} />
                 </div>
-            </section>
+            </nav>
+
         </NavStyle>
     );
 }
