@@ -1,5 +1,4 @@
 import React from "react";
-// import styles from "./FeaturedMembers.style";
 import {
   FeaturedTitle,
   CardContainer,
@@ -9,8 +8,8 @@ import {
   Email,
   Name,
   JobTitle,
+  Icon1,
 } from "./FeaturedMembers.style.js";
-import "./features.css";
 import icon from "../../assets/icon1.png";
 import icon2 from "../../assets/icon2.png";
 import icon3 from "../../assets/icon3.png";
@@ -26,7 +25,7 @@ const FeaturedMembers = () => {
       <CardContainer>
         <Card1>
           <div id="image">
-            <img id="icon1" src={icon} />
+            <Icon1 src={icon} />
           </div>
           <Words>
             <Name>JANE DOE</Name>
@@ -41,7 +40,7 @@ const FeaturedMembers = () => {
         </Card1>
         <Card1>
           <div id="image">
-            <img id="icon1" src={icon2} />
+            <Icon1 src={icon2} />
           </div>
           <Words>
             <Name>JANE DOE</Name>
@@ -56,7 +55,7 @@ const FeaturedMembers = () => {
         </Card1>
         <Card1>
           <div id="image">
-            <img id="icon1" src={icon3} />
+            <Icon1 src={icon3} />
           </div>
           <Words>
             <Name>JANE DOE</Name>
@@ -71,7 +70,7 @@ const FeaturedMembers = () => {
         </Card1>
         <Card1>
           <div id="image">
-            <img id="icon1" src={icon4} />
+            <Icon1 src={icon4} />
           </div>
           <Words>
             <Name>JANE DOE</Name>

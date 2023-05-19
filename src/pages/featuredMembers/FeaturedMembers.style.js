@@ -83,3 +83,13 @@ export const JobTitle = styled.p`
   padding-top: 0;
   padding-bottom: 20px;
 `;
+
+export const Icon1 = styled.img`
+  width: 121px;
+  height: 126px;
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-bottom: 24px;
+  padding-right: 30px;
+  justify-content: space-between;
+`;
