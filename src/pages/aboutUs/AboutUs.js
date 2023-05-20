@@ -46,7 +46,7 @@ export default function AboutUs() {
             picture: Nicole,
             name: "Nicole Lucien",
             title: "Software Engineer",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nisi at dolor lacinia, ut finibus mauris cursus. Suspendisse a maximus neque."
+            description: "Developer with a solid foundation of object-oriented programming, strong communication skills, efficient research skills and extensive experience with collaborative, data-driven projects. Committed to learning new technologies and maintaining a strong professional network."
         },
         {   
             picture: Anika,
