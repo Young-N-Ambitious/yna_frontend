@@ -1,4 +1,4 @@
-# Young N Ambitious #
+# Young N Ambitious #  [![ci](https://github.com/Young-N-Ambitious/yna_frontend/actions/workflows/main.yml/badge.svg?branch=dev)](https://github.com/Young-N-Ambitious/yna_frontend/actions/workflows/main.yml)
 YNA plans to help an infinite amount of minorities break into tech by providing professional guidance and resources through personal development, community, and open source. 
 
 ## Project Description ##
