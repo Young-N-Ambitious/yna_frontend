@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: center;
   color: white;
+  margin-top: 3rem;
+  
 }
 
 .our-mission {
@@ -19,6 +21,7 @@
 .yna-plans-to {
   font-size: 32px;
   font-weight: 300;
-  padding: 10px;
+  padding: 0 25px;
   box-sizing: border-box;
+  text-align: left;
 }

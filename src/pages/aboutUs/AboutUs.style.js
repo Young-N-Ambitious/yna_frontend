@@ -13,12 +13,12 @@ export const AboutStyle = styled.div`
     section {
         width: 100%;
         max-width: 80rem;
-
+        
         h2 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-
+        
         .team {
             font-family: 'Inter';
             font-style: normal;
@@ -40,29 +40,29 @@ export const AboutStyle = styled.div`
                 color: #FFC700;
             }
         }
-
+        
         .hero {
             display: flex;
             text-align: center;
             padding: 10px;
-
+            
             h4 {
                 animation: color-change 1s infinite;
             }
-              
+            
             @keyframes color-change {
                 0% { color: #fafa6e; }
                 50% { color: #fde536; }
                 100% { color: #fed60b; }
             }
-
+            
             .descriptionDiv {
                 background-color: black;
                 width: 60%;
                 height: auto;
                 padding: 10px;
             }
-
+            
             .founderLeftDiv {
                 display: flex;
                 flex-direction: column;
@@ -72,11 +72,11 @@ export const AboutStyle = styled.div`
                 height: auto;
                 padding: 10px;
             }
-
+            
             div {
                 border: 2px solid #FFC700;
             }
-
+            
             img {
                 width: 150px;
                 height: 150px;
@@ -84,19 +84,19 @@ export const AboutStyle = styled.div`
                 margin-right: 1rem;
                 margin-bottom: 5px;
             }
-
+            
             hr {
                 border: 1px solid #FFFFFF;
                 width: 70%;
             }
-
+            
             h3 {
                 font-family: 'Prosto One';
                 font-size: 1.2rem;
                 margin-bottom: 0.5rem;
                 margin-top: 2px
             }
-
+            
             h4 {
                 margin-bottom: 0.5rem;
                 color: #FFC700;
@@ -111,15 +111,16 @@ export const AboutStyle = styled.div`
                 color: #FFD644;
                 margin-top: -4px;
             }
-
+            
             p {
                 font-size: 1rem;
                 padding: 10px;
                 box-sizing: border-box;
+                text-align: left;
             }
-
+            
             @media (max-width: 787px) {
-
+                
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
@@ -194,6 +195,7 @@ export const AboutStyle = styled.div`
                     font-family: 'Poppins';
                     padding: 10px;
                     box-sizing: border-box;
+                    text-align: left;
                 }
 
                 transition: box-shadow 0.3s ease; /* Added transition */
@@ -216,6 +218,7 @@ export const AboutStyle = styled.div`
         }
 
         .whyUs {
+            margin-top: 2rem;
             padding: 10px 30px;
             background-color: black;
             font-family: 'Inter';
