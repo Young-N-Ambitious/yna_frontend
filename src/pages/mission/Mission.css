@@ -19,4 +19,6 @@
 .yna-plans-to {
   font-size: 32px;
   font-weight: 300;
+  padding: 10px;
+  box-sizing: border-box;
 }

@@ -59,15 +59,18 @@ export const AboutStyle = styled.div`
             .descriptionDiv {
                 background-color: black;
                 width: 60%;
-                height: 16rem;
+                height: auto;
                 padding: 10px;
             }
 
             .founderLeftDiv {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 width: 40%;
-                height: 16rem;
+                height: auto;
                 padding: 10px;
-                
             }
 
             div {
@@ -111,6 +114,8 @@ export const AboutStyle = styled.div`
 
             p {
                 font-size: 1rem;
+                padding: 10px;
+                box-sizing: border-box;
             }
 
             @media (max-width: 787px) {
@@ -124,7 +129,7 @@ export const AboutStyle = styled.div`
                     padding: 10px;
                     background-color: black;
                     width: 20rem;
-                    height: 16rem;
+                    height: auto;
                 }
                 
                 .founderLeftDiv {
@@ -187,6 +192,8 @@ export const AboutStyle = styled.div`
                 p {
                     font-size: 1rem;
                     font-family: 'Poppins';
+                    padding: 10px;
+                    box-sizing: border-box;
                 }
 
                 transition: box-shadow 0.3s ease; /* Added transition */
