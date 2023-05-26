@@ -103,7 +103,7 @@ export const MemberCard = styled.div`
     display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin: 5px;
+  margin: 0 0 2rem 0;
   background-color: black;
   border: 2px solid #ffd644;
   width: 23rem;
@@ -159,6 +159,7 @@ export const MemberCard = styled.div`
     flex-wrap: wrap;
     text-align: center;
     width: 20rem;
+    margin: 0 0 2rem 0;
 
     .imgDiv {
       width: 100%;
