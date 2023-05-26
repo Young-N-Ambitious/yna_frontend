@@ -82,17 +82,17 @@ const Member = ({ member }) => (
       <SocialLinks>  
         <div className="icons">
           {member.portfolio && (
-            <a href={member.portfolio} target="_blank">
+            <a href={member.portfolio} target="_blank" rel="noreferrer">
               <SocialIcon src={yna} alt="portfolio" />
             </a>
           )}
           {member.linkedin && (
-            <a href={member.linkedin} target="_blank">
+            <a href={member.linkedin} target="_blank" rel="noreferrer">
               <SocialIcon src={linked} alt="LinkedIn" />
             </a>
           )}
           {member.twitter && (
-            <a href={member.twitter} target="_blank">
+            <a href={member.twitter} target="_blank" rel="noreferrer">
               <SocialIcon src={twitter} alt="Twitter" />
             </a>
           )}
