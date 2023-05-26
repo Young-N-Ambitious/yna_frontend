@@ -27,6 +27,7 @@ const featuredMembers = [
     twitter: "https://twitter.com/KiloWattDot",
     linkedin: "https://www.linkedin.com/in/dorogilchrist/",
     github: "https://github.com/KiloWattDot",
+    portfolio: "https://kilowattdot.github.io/react-portfolio2/",
     active: true,
   },
   {
@@ -38,6 +39,7 @@ const featuredMembers = [
     twitter: "https://twitter.com/clue355",
     linkedin: "https://www.linkedin.com/in/carlos-luevano/",
     github: "https://github.com/Clue355/",
+    portfolio: "https://carlosluevano.netlify.app/",
     active: true,
   },
   {
@@ -49,6 +51,7 @@ const featuredMembers = [
     twitter: "https://github.com/sincerelybrittany",
     linkedin: "https://www.linkedin.com/in/sincerelybrittany/",
     github: "https://github.com/sincerelybrittany",
+    portfolio: "https://www.sincerelybrittany.com/",
     active: true,
   },
   {
@@ -60,6 +63,7 @@ const featuredMembers = [
     twitter: "https://twitter.com/mariorojasac",
     linkedin: "https://www.linkedin.com/in/mariorojasac/",
     github: "https://github.com/mariorojasac",
+    portfolio: "https://hopeful-raman-3294b9.netlify.app/",
     active: true,
   },
 ];
@@ -75,13 +79,11 @@ const Member = ({ member }) => (
         <p className="title">{member.title}</p>
       </div>
 
-      <SocialLinks>
-      <p className="memberEmail">{member.email}</p>
-    
+      <SocialLinks>  
         <div className="icons">
-          {member.github && (
-            <a href={member.github}>
-              <SocialIcon src={yna} alt="GitHub" />
+          {member.portfolio && (
+            <a href={member.portfolio}>
+              <SocialIcon src={yna} alt="portfolio" />
             </a>
           )}
           {member.linkedin && (

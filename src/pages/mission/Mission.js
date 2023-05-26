@@ -1,5 +1,5 @@
 import React from "react";
-import ColoredLine from "../globalComponents/coloredLine/coloredLine";
+
 import "./Mission.css";
 const Mission = () => {
   return (
@@ -14,7 +14,6 @@ const Mission = () => {
           </p>
         </div>
       </div>
-      <ColoredLine color="#ffd644" height={2} width="35%" />
     </>
   );
 };

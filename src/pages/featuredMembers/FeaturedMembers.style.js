@@ -36,7 +36,7 @@ export const MemberCard = styled.div`
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin: 10px;
+  margin: 15px 0;
   background-color: black;
   border: 2px solid #ffd644;
   width: 32rem;
@@ -55,6 +55,7 @@ export const MemberCard = styled.div`
     height: 10rem;
     border-radius: 50%;
     border: 2px solid #ffd644;
+    margin: 0 -3rem 0 0;
   }
 
   h3 {
@@ -205,7 +206,7 @@ export const SocialLinks = styled.div`
 export const SocialIcon = styled.img`
   width: 24px;
   height: 24px;
-  margin: 5px;
+  margin: 1rem;
 
   @media (max-width: 1324px) {
     margin: 0 10%;
