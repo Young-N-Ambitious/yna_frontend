@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.div`
-    position: abosolute;
+    position: relative;
     width: 100%;
     bottom: 0;
     left: 0;

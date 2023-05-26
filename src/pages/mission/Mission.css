@@ -5,10 +5,20 @@
   align-items: center;
   justify-content: center;
   color: white;
+  margin-top: 3rem;
+  padding: 10px 30px;
+}
+
+.center-item {
+  border: 2px solid black;
+  background-color: black;
+  width: 100%;
+  max-width: 80rem;
 }
 
 .our-mission {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #FFC700;
 }
 
 .container > div {
@@ -19,4 +29,7 @@
 .yna-plans-to {
   font-size: 32px;
   font-weight: 300;
+  padding: 0 25px;
+  box-sizing: border-box;
+  /* text-align: left; */
 }

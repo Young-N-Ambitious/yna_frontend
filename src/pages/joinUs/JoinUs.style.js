@@ -10,6 +10,7 @@ export const JoinStyle = styled.div`
   padding: 50px;
   background-color: #6a6863;
   color: #ffffff;
+  height: 74.5rem;
 
   .join-us {
     padding: 10px 30px;

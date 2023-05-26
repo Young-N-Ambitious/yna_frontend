@@ -7,9 +7,9 @@ export const RoadmapStyle = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 50px;
         background-color: #6a6863;
         color: #ffffff;
+        padding: 2rem 1rem 7rem 1rem;
     }
 
     @media (max-width: 700px) {
@@ -29,4 +29,6 @@ export const RoadmapStyle = styled.div`
             width: 50%;
         }
     }
+
+
 `;

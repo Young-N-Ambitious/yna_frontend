@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 export const NavStyle = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+
     background-color: #ffd644;
     html {
         scroll-behavior: smooth;
