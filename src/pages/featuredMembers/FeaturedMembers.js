@@ -48,7 +48,7 @@ const featuredMembers = [
     title: "Software Engineer",
     image: brit,
     email: "sincerelybr@gmail.com",
-    twitter: "https://github.com/sincerelybrittany",
+    twitter: "https://twitter.com/SincerelyBrittt",
     linkedin: "https://www.linkedin.com/in/sincerelybrittany/",
     github: "https://github.com/sincerelybrittany",
     portfolio: "https://www.sincerelybrittany.com/",
