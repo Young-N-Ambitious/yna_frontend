@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ynalogo from "../../../assets/ynalogo.png"
 import { NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'
 
 const ModalOverlay = styled.div`
     display: ${({ open }) => (open ? "block" : "none")};
@@ -136,14 +137,17 @@ const Modal = ({ open, onClose }) => {
                         </NavLink>
                     </MenuItem>
                     <MenuItem>
-                        <NavLink
+                        {/* <NavLink
                             onClick={onClose}
                             className="link"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/about-us"
                         >
                             About
-                        </NavLink>
+                        </NavLink> */}
+                        <HashLink onClick={onClose} smooth to="/#about-us" className="link" >
+                         About Us
+                         </HashLink>
                     </MenuItem>
                     {/* <MenuItem>
                         <NavLink
