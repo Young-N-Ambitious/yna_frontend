@@ -3,7 +3,7 @@ import NavBar from "../globalComponents/navBar/NavBar.js";
 import yellowTwitter from "../../assets/yellowTwitterIcon.png";
 import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
 import yellowGithub from "../../assets/yellowGithubIcon.png";
-import yellowEmail from "../../assets/yellowEmailIcon.png";
+import yellowInsta from "../../assets/ynaInstagramIcon.png";
 import ynalogocircle from "../../assets/ynaLogoCirlce.png";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -14,7 +14,7 @@ function ContactForm() {
             <NavBar />
             <ContactFormStyle>
 
-                <div className="container ">
+                <div className="container  ">
                     <div className="row ">
                         <div className="contact col-xl ">
                             <h1>Contact Us</h1>
@@ -29,18 +29,22 @@ function ContactForm() {
                                     {" "}
                                     <img src={yellowLinkedin} alt="LinkedIn" />
                                 </a>
+                                <h3>Linkedin</h3>
                                 <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
                                     {" "}
                                     <img src={yellowTwitter} alt="Twitter" />
                                 </a>
+                                <h3>Twittter</h3>
                                 <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer">
                                     {" "}
                                     <img src={yellowGithub} alt="Github" />{" "}
                                 </a>
-                                <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer">
+                                <h3>Github</h3>
+                                <a href="https://www.instagram.com/yna.squad/" target="_blank" rel="noreferrer">
                                     {" "}
-                                    <img src={yellowEmail} alt="Email" />{" "}
+                                    <img src={yellowInsta} alt="Instagram" />{" "}
                                 </a>
+                                <h3>Instagram</h3>
                                 <svg className="mb-3" width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line y1="0.5" x2="223" y2="0.5" stroke="white" />
                                 </svg>
