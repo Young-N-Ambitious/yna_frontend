@@ -3,6 +3,8 @@ import NavBar from "../globalComponents/navBar/NavBar.js";
 import yellowTwitter from "../../assets/yellowTwitterIcon.png";
 import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
 import yellowGithub from "../../assets/yellowGithubIcon.png";
+import yellowEmail from "../../assets/yellowEmailIcon.png";
+import ynalogocircle from "../../assets/ynaLogoCirlce.png";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
@@ -17,7 +19,12 @@ function ContactForm() {
                         <div className="contact col-xl ">
                             <h1>Contact Us</h1>
                             <div className="row ">
-                                <h2>Get in touch with the @yna_squad today!</h2>
+                                <img className="mb-3" src={ynalogocircle} alt="YNA Logo Circle" />
+
+                                <svg className="mb-3" width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="223" y2="0.5" stroke="white" />
+                                </svg>
+
                                 <a href="https://www.linkedin.com/company/yna-consult-group" target="_blank" rel="noreferrer">
                                     {" "}
                                     <img src={yellowLinkedin} alt="LinkedIn" />
@@ -30,14 +37,23 @@ function ContactForm() {
                                     {" "}
                                     <img src={yellowGithub} alt="Github" />{" "}
                                 </a>
+                                <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer">
+                                    {" "}
+                                    <img src={yellowEmail} alt="Email" />{" "}
+                                </a>
+                                <svg className="mb-3" width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="223" y2="0.5" stroke="white" />
+                                </svg>
+
+                                <h2>Get in touch with the @yna_squad today!</h2>
                             </div>
                         </div>
 
 
                         <div className="contact col-xl ">
-                            <h1>Form</h1>
-                            <Form>
-                            <Form.Group className="mb-3" controlId="formBasicName">
+
+                            <Form >
+                                <Form.Group className="mb-3 text-left" controlId="formBasicName">
                                     <Form.Label>Name</Form.Label>
                                     <Form.Control type="name" placeholder="Name" />
                                 </Form.Group>
@@ -54,7 +70,7 @@ function ContactForm() {
                                     <Form.Label>Message</Form.Label>
                                     <Form.Control type="message" placeholder="Message" />
                                 </Form.Group>
-                                
+
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                     <Form.Check type="checkbox" label="Check me out" />
                                 </Form.Group>
