@@ -9,22 +9,45 @@ function ContactForm() {
         <>
             <NavBar />
             <ContactFormStyle>
-                <div className="contact">
-                    <h1>Contact Us</h1>
-                    <h2>Get in touch with the @yna_squad today!</h2>
-                    <a href="https://www.linkedin.com/company/yna-consult-group" target="_blank" rel="noreferrer">
-                        {" "}
-                        <img src={yellowLinkedin} alt="LinkedIn" />
-                    </a>
-                    <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
-                        {" "}
-                        <img src={yellowTwitter} alt="Twitter" />
-                    </a>
-                    <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer">
-                        {" "}
-                        <img src={yellowGithub} alt="Github" />{" "}
-                    </a>
-                    
+
+                <div className="container ">
+                    <div className="row ">
+                        <div className="contact col-xl ">
+                            <h1>Contact Us</h1>
+                            <h2>Get in touch with the @yna_squad today!</h2>
+                            <a href="https://www.linkedin.com/company/yna-consult-group" target="_blank" rel="noreferrer">
+                                {" "}
+                                <img src={yellowLinkedin} alt="LinkedIn" />
+                            </a>
+                            <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
+                                {" "}
+                                <img src={yellowTwitter} alt="Twitter" />
+                            </a>
+                            <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer">
+                                {" "}
+                                <img src={yellowGithub} alt="Github" />{" "}
+                            </a>
+                        </div>
+
+
+                        <div className="contact col-xl ">
+                            <h1>Contact Us</h1>
+                            <h2>Get in touch with the @yna_squad today!</h2>
+                            <a href="https://www.linkedin.com/company/yna-consult-group" target="_blank" rel="noreferrer">
+                                {" "}
+                                <img src={yellowLinkedin} alt="LinkedIn" />
+                            </a>
+                            <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
+                                {" "}
+                                <img src={yellowTwitter} alt="Twitter" />
+                            </a>
+                            <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer">
+                                {" "}
+                                <img src={yellowGithub} alt="Github" />{" "}
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
             </ContactFormStyle>
         </>
