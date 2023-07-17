@@ -16,19 +16,8 @@ function ContactForm() {
     return (
         <>
             <NavBar />
-
-            <Button
-                onClick={() => setOpen(!open)}
-                aria-controls="example-collapse-text"
-                aria-expanded={open}
-            >
-             click
-            </Button>
-
-            <Collapse in={open}>
-
             <ContactFormStyle>
-                <div className="contact" id="example-collapse-text" >
+                <div className="contact">
                     <h1>Contact Us</h1>
                     <h2>Get in touch with the @yna_squad today!</h2>
                     <a href="https://www.linkedin.com/company/yna-consult-group" target="_blank" rel="noreferrer">
@@ -48,12 +37,26 @@ function ContactForm() {
 
                     </div>
 
+                    <Button
+                        onClick={() => setOpen(!open)}
+                        aria-controls="example-collapse-text"
+                        aria-expanded={open}
+                    >
+                        click
+                    </Button>
+                    <Collapse in={open}>
+                        <div id="example-collapse-text">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                            labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </Collapse>
 
 
                 </div>
-
             </ContactFormStyle>
-            </Collapse>
+
+
         </>
     );
 }
