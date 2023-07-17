@@ -28,7 +28,7 @@ function ContactForm() {
             <Collapse in={open}>
 
             <ContactFormStyle>
-                <div className="contact">
+                <div className="contact" id="example-collapse-text" >
                     <h1>Contact Us</h1>
                     <h2>Get in touch with the @yna_squad today!</h2>
                     <a href="https://www.linkedin.com/company/yna-consult-group" target="_blank" rel="noreferrer">
