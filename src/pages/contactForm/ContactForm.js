@@ -1,13 +1,32 @@
-import { ContactFormStyle } from "./ContactForm.style.js/index.js";
+import { ContactFormStyle } from "./ContactForm.style.js";
 import NavBar from "../globalComponents/navBar/NavBar.js";
 import yellowTwitter from "../../assets/yellowTwitterIcon.png";
 import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
 import yellowGithub from "../../assets/yellowGithubIcon.png";
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Collapse from 'react-bootstrap/Collapse';
+
 
 function ContactForm() {
+
+    const [open, setOpen] = useState(false);
+
+
     return (
         <>
             <NavBar />
+
+            <Button
+                onClick={() => setOpen(!open)}
+                aria-controls="example-collapse-text"
+                aria-expanded={open}
+            >
+             click
+            </Button>
+
+            <Collapse in={open}>
+
             <ContactFormStyle>
                 <div className="contact">
                     <h1>Contact Us</h1>
@@ -24,9 +43,17 @@ function ContactForm() {
                         {" "}
                         <img src={yellowGithub} alt="Github" />{" "}
                     </a>
-                    
+
+                    <div>
+
+                    </div>
+
+
+
                 </div>
+
             </ContactFormStyle>
+            </Collapse>
         </>
     );
 }
