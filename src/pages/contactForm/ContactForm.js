@@ -1,14 +1,14 @@
-import { ContactStyle } from "./ContactUs.style.js";
-import NavBar from "../globalComponents/navBar/NavBar";
+import { ContactFormStyle } from "./ContactForm.style.js/index.js";
+import NavBar from "../globalComponents/navBar/NavBar.js";
 import yellowTwitter from "../../assets/yellowTwitterIcon.png";
 import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
 import yellowGithub from "../../assets/yellowGithubIcon.png";
 
-function ContactUs() {
+function ContactForm() {
     return (
         <>
             <NavBar />
-            <ContactStyle>
+            <ContactFormStyle>
                 <div className="contact">
                     <h1>Contact Us</h1>
                     <h2>Get in touch with the @yna_squad today!</h2>
@@ -24,22 +24,10 @@ function ContactUs() {
                         {" "}
                         <img src={yellowGithub} alt="Github" />{" "}
                     </a>
-                    <iframe
-                        className="form"
-                        title="YNA Sponsor/Information Inquiry"
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSdaVM6MOpbkvv1deoYmmJnxyLRd8rXnSiQRQoV8WKY_AAQmLQ/viewform?embedded=true"
-                        width="640"
-                        height="718"
-                        align="center"
-                        frameborder="0"
-                        marginheight="0"
-                        marginwidth="0"
-                    >
-                        Loading…
-                    </iframe>
+                    
                 </div>
-            </ContactStyle>
+            </ContactFormStyle>
         </>
     );
 }
-export default ContactUs;
+export default ContactForm;
