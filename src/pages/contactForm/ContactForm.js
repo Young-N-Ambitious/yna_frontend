@@ -13,7 +13,7 @@ function ContactForm() {
         <>
             <NavBar />
             <ContactFormStyle>
-
+{/* 
                 <div className="container  ">
                     <div className="row ">
                         <div className="contact col-xl ">
@@ -87,7 +87,7 @@ function ContactForm() {
 
                         </div>
                     </div>
-                </div>
+                </div> */}
             </ContactFormStyle>
         </>
     );
