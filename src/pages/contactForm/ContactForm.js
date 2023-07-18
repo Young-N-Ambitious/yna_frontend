@@ -1,13 +1,13 @@
 import { ContactFormStyle } from "./ContactForm.style.js";
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from "../globalComponents/navBar/NavBar.js";
 import yellowTwitter from "../../assets/yellowTwitterIcon.png";
 import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
 import yellowGithub from "../../assets/yellowGithubIcon.png";
 import yellowInsta from "../../assets/ynaInstagramIcon.png";
 import ynalogocircle from "../../assets/ynaLogoCirlce.png";
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+// import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
 
 function ContactForm() {
     return (
