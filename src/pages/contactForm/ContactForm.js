@@ -1,4 +1,5 @@
 import { ContactFormStyle } from "./ContactForm.style.js";
+import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from "../globalComponents/navBar/NavBar.js";
 import yellowTwitter from "../../assets/yellowTwitterIcon.png";
 import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
@@ -13,7 +14,7 @@ function ContactForm() {
         <>
             <NavBar />
             <ContactFormStyle>
-{/* 
+
                 <div className="container  ">
                     <div className="row ">
                         <div className="contact col-xl ">
@@ -87,7 +88,7 @@ function ContactForm() {
 
                         </div>
                     </div>
-                </div> */}
+                </div>
             </ContactFormStyle>
         </>
     );

@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css'
+
 import { HomePage, AboutUs, JoinUs, Members, Login, NotFound,  } from "./pages";
 import Footer from "./pages/globalComponents/footer/Footer";
 import ContactForm from "./pages/contactForm/ContactForm";
