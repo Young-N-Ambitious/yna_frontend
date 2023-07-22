@@ -1,4 +1,4 @@
-import { ContactFormStyle } from "./ContactForm.style.js";
+import { ContactFormStyle,  FormWrapper, FormContainer, FormGroup, ContactContainer, ContactInfoContainer, SocialMediaContainer   } from "./ContactForm.style.js";
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from "../globalComponents/navBar/NavBar.js";
 import yellowTwitter from "../../assets/yellowTwitterIcon.png";
@@ -6,6 +6,10 @@ import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
 import yellowGithub from "../../assets/yellowGithubIcon.png";
 import yellowInsta from "../../assets/ynaInstagramIcon.png";
 import ynalogocircle from "../../assets/ynaLogoCirlce.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+
 // import Form from 'react-bootstrap/Form';
 // import Button from 'react-bootstrap/Button';
 
@@ -17,7 +21,7 @@ function ContactForm() {
 
                 <div className="container  ">
                     <div className="row ">
-                        <div className="contact col-xl ">
+                        {/* <div className="contact col-xl ">
                             <h1>Contact Us</h1>
                             <div className="row ">
                                 <img className="mb-3" src={ynalogocircle} alt="YNA Logo Circle" />
@@ -52,41 +56,40 @@ function ContactForm() {
 
                                 <h2>Get in touch with the @yna_squad today!</h2>
                             </div>
-                        </div>
+                        </div> */}
 
 
-                        <div className="contact col-xl ">
+                        <FormWrapper>
+      <ContactContainer>
+        <ContactInfoContainer>
+          <h2>Contact Information</h2>
+          <SocialMediaContainer>
+            <FontAwesomeIcon icon={faFacebook} />
+            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faInstagram} />
+          </SocialMediaContainer>
+          <p>Phone: +1 (123) 456-7890</p>
+        </ContactInfoContainer>
+        <FormContainer>
+          <form>
+            <FormGroup>
+              <label htmlFor="name">Name:</label>
+              <input type="text" id="name" name="name" />
+            </FormGroup>
+            <FormGroup>
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </FormGroup>
+            <FormGroup>
+              <label htmlFor="message">Message:</label>
+              <textarea id="message" name="message" rows="4" />
+            </FormGroup>
+            <button type="submit">Submit</button>
+          </form>
+        </FormContainer>
+      </ContactContainer>
+    </FormWrapper>
 
-                            <Form >
-                                <Form.Group className="mb-3 text-left" controlId="formBasicName">
-                                    <Form.Label>Name</Form.Label>
-                                    <Form.Control type="name" placeholder="Name" />
-                                </Form.Group>
-
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                    <Form.Text className="text-muted">
-                                        We'll never share your email with anyone else.
-                                    </Form.Text>
-                                </Form.Group>
-
-                                <Form.Group className="mb-3" controlId="formBasicMessage">
-                                    <Form.Label>Message</Form.Label>
-                                    <Form.Control type="message" placeholder="Message" />
-                                </Form.Group>
-
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Check me out" />
-                                </Form.Group>
-                                <Button variant="primary" type="submit">
-                                    Submit
-                                </Button>
-                            </Form>
-
-
-
-                        </div>
                     </div>
                 </div>
             </ContactFormStyle>
