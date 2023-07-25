@@ -49,17 +49,19 @@ export const ContactContainer = styled.div`
   background-color: #f0f0f0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+  
   p { 
     color: white;
+    text-align: center
   }
 `;
 
 export const ContactInfoContainer = styled.div`
   flex: 1;
   padding: 20px;
-  background: Black
-
+  background: Black;
+  border: 10px solid #B88F00; /* Changed border color to #FFC100 */
+ 
  
 `;
 
@@ -82,7 +84,7 @@ export const ContactInfoList = styled.ul`
     align-items: center;
     margin-bottom: 10px;
     color: white;
-
+    padding: 10px 50px;
     svg {
       font-size: 24px;
       margin-right: 10px;
@@ -96,10 +98,10 @@ export const SocialMediaContainer = styled.div`
 
   svg {
     font-size: 24px;
-    margin-right: 10px;
+    margin-right: 30px !important;
     cursor: pointer;
     transition: color 0.3s;
-    color: #FFC700;
+    color: #FFC100;
 
     &:hover {
       color: #FFFFFF; /* GitHub brand color */
@@ -129,7 +131,7 @@ export const FormGroup = styled.div`
   textarea {
     width: 90%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffc10061; /* Changed border color to #FFC100 */
     border-radius: 4px;
     background: #404040;
   }
@@ -143,7 +145,7 @@ padding: 8px;
 border: 2px solid #ffc700;
 border-radius: 14px;
 background-color: black;
-align-items: center;
+margin: 12px;
 color: white;
 cursor: pointer;
 transition: background-color 0.3s, color 0.3s;
@@ -151,5 +153,6 @@ transition: background-color 0.3s, color 0.3s;
 &:hover {
   background-color: #ffc700;
   color: black;
+  border
 }
 `;

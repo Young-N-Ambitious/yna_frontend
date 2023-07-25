@@ -19,7 +19,7 @@ const ContactForm = () => {
             <FormWrapper>
               <ContactContainer>
                 <ContactInfoContainer>
-                  <ContactInfoHeader>Contact US</ContactInfoHeader>
+                  <ContactInfoHeader>CONTACT US</ContactInfoHeader>
                   <svg width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="223" y2="0.5" stroke="white" />
                   </svg>
@@ -44,13 +44,14 @@ const ContactForm = () => {
                       </li>
                     </SocialMediaContainer>
                   </ContactInfoList>
-                  <p>Phone: +1 (123) 456-7890</p>
 
                   <svg width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line y1="0.5" x2="223" y2="0.5" stroke="white" />
-                </svg>
+                    <line y1="0.5" x2="223" y2="0.5" stroke="white" />
+                  </svg>
+
+                  <p>Get in touch with the @yna_squad today!</p>
                 </ContactInfoContainer>
-               
+
                 <FormContainer>
                   <form>
                     <FormGroup>
