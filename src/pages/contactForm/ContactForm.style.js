@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import "@fontsource/poppins";
 
 export const ContactFormStyle = styled.div`
 background-color: white;
@@ -9,31 +9,18 @@ align-items: center;
 justify-content: center;
 background-color: #6a6863;
 
-    .contact {
-        padding: 10px 30px;
-        background-color: black;
-        // will change color once i update the icon colors
-        font-family: "Inter";
-        h2 {
-            color: #ffc700;
-        }
-        iframe {
-            display: block;
-            margin: auto;
-        }
-        text-align: center;
-    }
 
-    @media (max-width: 700px) {
-        .contact {
-            width: 100%;
-        }
-        .form {
-            width: 100%;
-        }
-    }
+ 
+@media (max-width: 700px) {
 
-    
+  width: 100%;
+  padding: 5px; /* Reduce padding for mobile view */
+
+         
+
+  /* You can adjust other styles for smaller screens here */
+}
+
 `;
 
 export const FormWrapper = styled.div`
@@ -41,6 +28,18 @@ export const FormWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  @media (max-width: 700px) {
+
+    width: 100%;
+    padding: 5px; /* Reduce padding for mobile view */
+
+           
+
+    /* You can adjust other styles for smaller screens here */
+  }
+
+
 `;
 
 export const ContactContainer = styled.div`
@@ -48,10 +47,11 @@ export const ContactContainer = styled.div`
   width: 800px;
   background-color: #f0f0f0;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 14px 8px rgba(0, 0, 0, 0.4); /* Add drop shadow */
+
   
   p { 
-    color: white;
+    color: #FFC100;
     text-align: center
   }
 
@@ -73,8 +73,10 @@ export const ContactInfoHeader = styled.h2`
   margin-bottom: 15px;
   color: #f0f0f0;
   text-align: center;
+  font-family: "Poppins"; /* Use Poppins font for p elements */
+  font-weight: 700;
+  font-size: 30px;
 
-  
 
   
 `;
@@ -122,23 +124,36 @@ export const FormContainer = styled.div`
 `;
 
 export const FormGroup = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  
 
   label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: white;
+    
   }
 
   input,
   textarea {
     width: 90%;
-    padding: 8px;
+    padding: 18px;
     border: 1px solid #ffc10061; /* Changed border color to #FFC100 */
-    border-radius: 4px;
+    border-radius: 2px;
     background: #404040;
+    ::placeholder { /* Added placeholder styling */
+      color: #ccc;
+      font-style: italic;
+      font-size: 15px;
   }
+
+  @media (max-width: 700px) {
+    input,
+    textarea {
+      width: 100%; /* Make the inputs and textarea full-width for mobile view */
+    }
 
   
 `;
@@ -149,10 +164,14 @@ padding: 8px;
 border: 2px solid #ffc700;
 border-radius: 14px;
 background-color: black;
-margin: 12px;
+margin: 2px 20px;
 color: white;
 cursor: pointer;
 transition: background-color 0.3s, color 0.3s;
+font-family: "Poppins"; /* Use Poppins font for p elements */
+font-size: 20px;
+font-weight: 400;
+
 
 &:hover {
   background-color: #ffc700;

@@ -1306,6 +1306,16 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/poppins@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.0.5.tgz"
+  integrity sha512-Y/AGmD6iavfobRb7f2l49q0dQSyisvRrUfJ7F0AWOlTNFty8bbnPBbg+5Qsq5EN6xWaIAn++50aLfOCEe7zu3w==
+
+"@fontsource/roboto@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.npmjs.org/@fontsource/roboto/-/roboto-5.0.5.tgz"
+  integrity sha512-IMXFq5AMgGx0sgNLfwWsmPuy3qa7lmDmQcXXihqwF4mT2UpD725cbxZj93ERY793OWon+6V1ANax02I3nt9+4w==
+
 "@fortawesome/fontawesome-common-types@6.4.0":
   version "6.4.0"
   resolved "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.4.0.tgz"

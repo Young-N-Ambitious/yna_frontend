@@ -5,17 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ynaLogoCircle from "../../assets/ynaLogoCirlce.png"
 
-// import Form from 'react-bootstrap/Form';
-// import Button from 'react-bootstrap/Button';
-
 const ContactForm = () => {
   return (
     <>
       <NavBar />
       <ContactFormStyle>
-
-        <div className="  ">
-          <div className=" ">
             <FormWrapper>
               <ContactContainer>
                 <ContactInfoContainer>
@@ -74,24 +68,22 @@ const ContactForm = () => {
                 <FormContainer>
                   <form>
                     <FormGroup>
-                      <label htmlFor="name">Name:</label>
-                      <input type="text" id="name" name="name" />
+                      {/* <label htmlFor="name">Name:</label> */}
+                      <input type="text" id="name" name="name"placeholder="Name:"  />
                     </FormGroup>
                     <FormGroup>
-                      <label htmlFor="email">Email:</label>
-                      <input type="email" id="email" name="email" />
+                      {/* <label htmlFor="email">Email:</label> */}
+                      <input type="email" id="email" name="email" placeholder="Email:"  />
                     </FormGroup>
                     <FormGroup>
-                      <label htmlFor="message">Message:</label>
-                      <textarea id="message" name="message" rows="8" />
+                      {/* <label htmlFor="message">Message:</label> */}
+                      <textarea id="message" name="message" rows="20" placeholder="Type message here:"  />
                     </FormGroup>
                     <SubmitButton type="submit">Submit</SubmitButton>
                   </form>
                 </FormContainer>
               </ContactContainer>
             </FormWrapper>
-          </div>
-        </div>
       </ContactFormStyle>
     </>
   );
