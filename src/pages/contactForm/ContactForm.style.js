@@ -79,23 +79,46 @@ export const ContactInfoContainer = styled.div`
   flex: 1;
   padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  // flex-direction: column;
+  // align-items: center;
 `;
 
-export const SocialMediaContainer = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
 
-  svg {
-    font-size: 24px;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
+export const ContactInfoHeader = styled.h2`
+  margin-bottom: 15px;
+`;
 
-    &:hover {
-      color: #1877f2; /* Facebook brand color */
+export const ContactInfoList = styled.ul`
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    svg {
+      font-size: 24px;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: color 0.3s;
     }
   }
 `;
+
+// export const SocialMediaContainer = styled.div`
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 20px;
+
+//   svg {
+//     font-size: 24px;
+//     margin-right: 10px;
+//     cursor: pointer;
+//     transition: color 0.3s;
+
+//     &:hover {
+//       color: #1877f2; /* Facebook brand color */
+//     }
+//   }
+// `;
