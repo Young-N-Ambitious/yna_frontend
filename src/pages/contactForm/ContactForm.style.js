@@ -54,6 +54,8 @@ export const ContactContainer = styled.div`
     color: white;
     text-align: center
   }
+
+
 `;
 
 export const ContactInfoContainer = styled.div`
@@ -62,7 +64,9 @@ export const ContactInfoContainer = styled.div`
   background: Black;
   border: 10px solid #B88F00; /* Changed border color to #FFC100 */
  
- 
+  img {
+    paddding: 22px;
+  }
 `;
 
 export const ContactInfoHeader = styled.h2`
@@ -156,3 +160,12 @@ transition: background-color 0.3s, color 0.3s;
   border
 }
 `;
+
+export const LogoStyle = styled.div`
+
+img {
+  padding: 22px;
+}
+
+
+`

@@ -1,9 +1,9 @@
-import { ContactFormStyle, FormWrapper, FormContainer, FormGroup, ContactContainer, ContactInfoContainer, ContactInfoHeader, ContactInfoList, SocialMediaContainer, SubmitButton } from "./ContactForm.style.js";
+import { ContactFormStyle, FormWrapper, FormContainer, FormGroup, ContactContainer, ContactInfoContainer, ContactInfoHeader, ContactInfoList, SocialMediaContainer, SubmitButton, LogoStyle } from "./ContactForm.style.js";
 
 import NavBar from "../globalComponents/navBar/NavBar.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
+import ynaLogoCircle from "../../assets/ynaLogoCirlce.png"
 
 // import Form from 'react-bootstrap/Form';
 // import Button from 'react-bootstrap/Button';
@@ -20,26 +20,45 @@ const ContactForm = () => {
               <ContactContainer>
                 <ContactInfoContainer>
                   <ContactInfoHeader>CONTACT US</ContactInfoHeader>
+
+                  <LogoStyle>
+                    <div>
+                      <img src={ynaLogoCircle} alt="YNA_logo_in_a_circle" />
+                    </div>
+
+                  </LogoStyle>
+
+
                   <svg width="223" height="1" viewBox="0 0 223 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="223" y2="0.5" stroke="white" />
                   </svg>
-
                   <ContactInfoList>
                     <SocialMediaContainer>
                       <li>
-                        <FontAwesomeIcon icon={faGithub} />
+                        <a href="https://github.com/Young-N-Ambitious" target="_blank" rel="noreferrer">
+                          <FontAwesomeIcon icon={faGithub} />
+                        </a>
                         GitHub
                       </li>
+
                       <li>
-                        <FontAwesomeIcon icon={faLinkedin} />
-                        Linkdein
+                        <a href="https://www.linkedin.com/company/yna-consult-group/" target="_blank" rel="noreferrer">
+                          <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                        Linkedin
                       </li>
+
                       <li>
-                        <FontAwesomeIcon icon={faTwitter} />
+                        <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
+                          <FontAwesomeIcon icon={faTwitter} />
+                        </a>
                         Twitter
                       </li>
+
                       <li>
-                        <FontAwesomeIcon icon={faInstagram} />
+                        <a href="https://www.instagram.com/yna.squad/" target="_blank" rel="noreferrer">
+                          <FontAwesomeIcon icon={faInstagram} />
+                        </a>
                         Instagram
                       </li>
                     </SocialMediaContainer>
