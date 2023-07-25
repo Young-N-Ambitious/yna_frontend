@@ -35,36 +35,12 @@ background-color: #6a6863;
 
     
 `;
+
 export const FormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-`;
-
-export const FormContainer = styled.div`
-  width: 400px;
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-`;
-
-export const FormGroup = styled.div`
-  margin-bottom: 20px;
-
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-
-  input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
 `;
 
 export const ContactContainer = styled.div`
@@ -78,11 +54,7 @@ export const ContactContainer = styled.div`
 export const ContactInfoContainer = styled.div`
   flex: 1;
   padding: 20px;
-  display: flex;
-  // flex-direction: column;
-  // align-items: center;
 `;
-
 
 export const ContactInfoHeader = styled.h2`
   margin-bottom: 15px;
@@ -106,19 +78,25 @@ export const ContactInfoList = styled.ul`
   }
 `;
 
-// export const SocialMediaContainer = styled.div`
-//   display: flex;
-//   align-items: center;
-//   margin-bottom: 20px;
+export const FormContainer = styled.div`
+  flex: 2;
+  padding: 20px;
+`;
 
-//   svg {
-//     font-size: 24px;
-//     margin-right: 10px;
-//     cursor: pointer;
-//     transition: color 0.3s;
+export const FormGroup = styled.div`
+  margin-bottom: 20px;
 
-//     &:hover {
-//       color: #1877f2; /* Facebook brand color */
-//     }
-//   }
-// `;
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+`;

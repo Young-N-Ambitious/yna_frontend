@@ -1,5 +1,5 @@
-import { ContactFormStyle, FormWrapper, FormContainer, FormGroup, ContactContainer, ContactInfoContainer, ContactInfoList, ContactInfoHeader, ContactInfoList } from "./ContactForm.style.js";
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import { ContactFormStyle, FormWrapper, FormContainer, FormGroup, ContactContainer, ContactInfoContainer, ContactInfoHeader, ContactInfoList } from "./ContactForm.style.js";
+
 import NavBar from "../globalComponents/navBar/NavBar.js";
 
 // import yellowTwitter from "../../assets/yellowTwitterIcon.png";
@@ -14,7 +14,7 @@ import { faGithub, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-
 // import Form from 'react-bootstrap/Form';
 // import Button from 'react-bootstrap/Button';
 
-function ContactForm() {
+const ContactForm = () => {
   return (
     <>
       <NavBar />
@@ -33,7 +33,7 @@ function ContactForm() {
                     </li>
                     <li>
                       <FontAwesomeIcon icon={faLinkedin} />
-                      faLinkedin
+                      Linkdein
                     </li>
                     <li>
                       <FontAwesomeIcon icon={faTwitter} />
@@ -65,11 +65,10 @@ function ContactForm() {
                 </FormContainer>
               </ContactContainer>
             </FormWrapper>
-
           </div>
         </div>
       </ContactFormStyle>
     </>
   );
-}
+};
 export default ContactForm;
