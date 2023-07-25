@@ -49,15 +49,28 @@ export const ContactContainer = styled.div`
   background-color: #f0f0f0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  p { 
+    color: white;
+  }
 `;
 
 export const ContactInfoContainer = styled.div`
   flex: 1;
   padding: 20px;
+  background: Black
+
+ 
 `;
 
 export const ContactInfoHeader = styled.h2`
   margin-bottom: 15px;
+  color: #f0f0f0;
+  text-align: center;
+
+  
+
+  
 `;
 
 export const ContactInfoList = styled.ul`
@@ -68,6 +81,7 @@ export const ContactInfoList = styled.ul`
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    color: white;
 
     svg {
       font-size: 24px;
@@ -76,11 +90,29 @@ export const ContactInfoList = styled.ul`
       transition: color 0.3s;
     }
   }
+  
 `;
+export const SocialMediaContainer = styled.div`
+
+  svg {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #FFC700;
+
+    &:hover {
+      color: #FFFFFF; /* GitHub brand color */
+    }
+  }
+`;
+
 
 export const FormContainer = styled.div`
   flex: 2;
   padding: 20px;
+  background: Black
+ 
 `;
 
 export const FormGroup = styled.div`
@@ -90,13 +122,34 @@ export const FormGroup = styled.div`
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+    color: white;
   }
 
   input,
   textarea {
-    width: 100%;
+    width: 90%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background: #404040;
   }
+
+  
+`;
+
+export const SubmitButton = styled.button`
+width: 90%;
+padding: 8px;
+border: 2px solid #ffc700;
+border-radius: 14px;
+background-color: black;
+align-items: center;
+color: white;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
+
+&:hover {
+  background-color: #ffc700;
+  color: black;
+}
 `;
