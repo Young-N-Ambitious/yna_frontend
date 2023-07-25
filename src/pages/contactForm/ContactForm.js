@@ -1,11 +1,12 @@
-import { ContactFormStyle,  FormWrapper, FormContainer, FormGroup, ContactContainer, ContactInfoContainer, SocialMediaContainer   } from "./ContactForm.style.js";
+import { ContactFormStyle, FormWrapper, FormContainer, FormGroup, ContactContainer, ContactInfoContainer, SocialMediaContainer } from "./ContactForm.style.js";
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from "../globalComponents/navBar/NavBar.js";
-import yellowTwitter from "../../assets/yellowTwitterIcon.png";
-import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
-import yellowGithub from "../../assets/yellowGithubIcon.png";
-import yellowInsta from "../../assets/ynaInstagramIcon.png";
-import ynalogocircle from "../../assets/ynaLogoCirlce.png";
+
+// import yellowTwitter from "../../assets/yellowTwitterIcon.png";
+// import yellowLinkedin from "../../assets/yellowLinkedinIcon.png";
+// import yellowGithub from "../../assets/yellowGithubIcon.png";
+// import yellowInsta from "../../assets/ynaInstagramIcon.png";
+// import ynalogocircle from "../../assets/ynaLogoCirlce.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
@@ -14,14 +15,14 @@ import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg
 // import Button from 'react-bootstrap/Button';
 
 function ContactForm() {
-    return (
-        <>
-            <NavBar />
-            <ContactFormStyle>
+  return (
+    <>
+      <NavBar />
+      <ContactFormStyle>
 
-                <div className="container  ">
-                    <div className="row ">
-                        {/* <div className="contact col-xl ">
+        <div className="container  ">
+          <div className="row ">
+            {/* <div className="contact col-xl ">
                             <h1>Contact Us</h1>
                             <div className="row ">
                                 <img className="mb-3" src={ynalogocircle} alt="YNA Logo Circle" />
@@ -59,41 +60,41 @@ function ContactForm() {
                         </div> */}
 
 
-                        <FormWrapper>
-      <ContactContainer>
-        <ContactInfoContainer>
-          <h2>Contact Information</h2>
-          <SocialMediaContainer>
-            <FontAwesomeIcon icon={faFacebook} />
-            <FontAwesomeIcon icon={faTwitter} />
-            <FontAwesomeIcon icon={faInstagram} />
-          </SocialMediaContainer>
-          <p>Phone: +1 (123) 456-7890</p>
-        </ContactInfoContainer>
-        <FormContainer>
-          <form>
-            <FormGroup>
-              <label htmlFor="name">Name:</label>
-              <input type="text" id="name" name="name" />
-            </FormGroup>
-            <FormGroup>
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" />
-            </FormGroup>
-            <FormGroup>
-              <label htmlFor="message">Message:</label>
-              <textarea id="message" name="message" rows="4" />
-            </FormGroup>
-            <button type="submit">Submit</button>
-          </form>
-        </FormContainer>
-      </ContactContainer>
-    </FormWrapper>
+            <FormWrapper>
+              <ContactContainer>
+                <ContactInfoContainer>
+                  <h2>Contact Information</h2>
+                  <SocialMediaContainer>
+                    <FontAwesomeIcon icon={faFacebook} />
+                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </SocialMediaContainer>
+                  <p>Phone: +1 (123) 456-7890</p>
+                </ContactInfoContainer>
+                <FormContainer>
+                  <form>
+                    <FormGroup>
+                      <label htmlFor="name">Name:</label>
+                      <input type="text" id="name" name="name" />
+                    </FormGroup>
+                    <FormGroup>
+                      <label htmlFor="email">Email:</label>
+                      <input type="email" id="email" name="email" />
+                    </FormGroup>
+                    <FormGroup>
+                      <label htmlFor="message">Message:</label>
+                      <textarea id="message" name="message" rows="4" />
+                    </FormGroup>
+                    <button type="submit">Submit</button>
+                  </form>
+                </FormContainer>
+              </ContactContainer>
+            </FormWrapper>
 
-                    </div>
-                </div>
-            </ContactFormStyle>
-        </>
-    );
+          </div>
+        </div>
+      </ContactFormStyle>
+    </>
+  );
 }
 export default ContactForm;
