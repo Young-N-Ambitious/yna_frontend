@@ -133,6 +133,7 @@ export const FormGroup = styled.div`
     margin-bottom: 8px;
     font-weight: bold;
     color: white;
+    font-size: 12px;
     
   }
 
