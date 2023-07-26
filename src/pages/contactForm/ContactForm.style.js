@@ -149,6 +149,8 @@ export const FormGroup = styled.div`
       font-size: 15px;
   }
 
+  color: white; /* Set textarea text color to white */
+
   @media (max-width: 700px) {
     input,
     textarea {
