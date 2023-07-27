@@ -23,7 +23,11 @@ const Login = () => {
                                 </FormGroup>
                                 <LoginButton type="submit">Log In</LoginButton>
                             </form>
-                            <p> Sign up to join YNA </p> <ApplyButton type="submit">Apply Here</ApplyButton>
+                            <div>
+                                <p> Sign up to join YNA </p>
+                                <ApplyButton type="submit">Apply Here</ApplyButton>
+                            </div>
+
                         </FormContainer>
                     </ContactContainer>
                 </FormWrapper>

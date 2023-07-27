@@ -45,7 +45,7 @@ export const ContactContainer = styled.div`
   width: 400px;
   background-color: #f0f0f0;
   border-radius: 8px;
-  box-shadow: 8px 14px 8px rgba(0, 0, 0, 0.4); /* Add drop shadow */
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.4); /* Add drop shadow */
 
   
   p { 
@@ -88,7 +88,7 @@ export const FormGroup = styled.div`
     ::placeholder { /* Added placeholder styling */
       color: #ccc;
       font-style: italic;
-      font-size: 15px;
+      font-size: 12px;
   }
 
   color: white; /* Set textarea text color to white */
@@ -123,6 +123,8 @@ font-weight: 400;
   border
 }
 `;
+
+
 export const ApplyButton = styled.button`
 width: 40%;
 padding: 8px;
