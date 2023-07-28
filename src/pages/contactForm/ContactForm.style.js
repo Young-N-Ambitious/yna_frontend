@@ -33,7 +33,7 @@ export const FormWrapper = styled.div`
 
     width: 100%;
     padding: 5px; /* Reduce padding for mobile view */
-
+    height: 150vh;
            
 
     /* You can adjust other styles for smaller screens here */
@@ -55,6 +55,11 @@ export const ContactContainer = styled.div`
     text-align: center
   }
 
+  @media (max-width: 700px) {
+    width: 400px;
+    flex-direction: column;
+
+  }
 
 `;
 
@@ -65,8 +70,15 @@ export const ContactInfoContainer = styled.div`
   border: 10px solid #B88F00; /* Changed border color to #FFC100 */
  
   img {
-    paddding: 22px;
+    padding: 22px;
   }
+
+  @media (max-width: 700px) {
+    padding: 72px;
+
+    
+  }
+
 `;
 
 export const ContactInfoHeader = styled.h2`
@@ -119,7 +131,9 @@ export const SocialMediaContainer = styled.div`
 export const FormContainer = styled.div`
   flex: 2;
   padding: 20px;
-  background: Black
+  background: Black;
+
+  
  
 `;
 
@@ -153,10 +167,15 @@ export const FormGroup = styled.div`
   color: white; /* Set textarea text color to white */
 
   @media (max-width: 700px) {
+
+   
+
     input,
     textarea {
       width: 100%; /* Make the inputs and textarea full-width for mobile view */
     }
+
+
 
   
 `;
