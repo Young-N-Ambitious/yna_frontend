@@ -3,20 +3,12 @@ import "@fontsource/poppins";
 
 export const ContactFormStyle = styled.div`
 background-color: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
 background-color: #6a6863;
 
-
- 
 @media (max-width: 700px) {
 
   width: 100%;
   padding: 5px; /* Reduce padding for mobile view */
-
-         
 
   /* You can adjust other styles for smaller screens here */
 }
@@ -36,7 +28,7 @@ export const FormWrapper = styled.div`
     height: 150vh;
            
 
-    /* You can adjust other styles for smaller screens here */
+    /* You can ad+just other styles for smaller screens here */
   }
 
 
