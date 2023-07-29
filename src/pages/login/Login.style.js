@@ -129,12 +129,18 @@ border: 2px solid #12F3D8;
 border-radius: 14px;
 background-color: black;
 margin: 10px 9px;
-color: white;
+
 cursor: pointer;
 transition: background-color 0.3s, color 0.3s;
-font-family: "Poppins"; /* Use Poppins font for p elements */
-font-size: 16px;
-font-weight: 400;
+
+a {
+  font-family: "Poppins"; /* Use Poppins font for p elements */
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
 
 
 &:hover {

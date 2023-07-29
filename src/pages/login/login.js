@@ -33,8 +33,17 @@ const Login = () => {
                         </div>
 
                         <div className="formBottom">
+
                             <p> Sign up to join YNA </p>
-                            <ApplyButton type="submit">Apply Here</ApplyButton>
+
+                            <ApplyButton type="submit">
+                                <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
+                                    Apply Here
+                                </a>
+                            </ApplyButton>
+
+
+
                         </div>
 
 
