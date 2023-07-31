@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../globalComponents/navBar/NavBar";
-import { LoginWrapper, ContactContainer, FormContainer, FormGroup, LoginButton, ApplyButton } from "./Login.style.js";
+import { LoginWrapper, LoginContainer, FormContainer, FormGroup, LoginButton, ApplyButton } from "./Login.style.js";
 
 const Login = () => {
     return (
@@ -8,7 +8,7 @@ const Login = () => {
             <NavBar />
 
             <LoginWrapper>
-                <ContactContainer>
+                <LoginContainer>
                     <FormContainer>
                         <form>
 
@@ -46,7 +46,7 @@ const Login = () => {
 
 
                     </FormContainer>
-                </ContactContainer>
+                </LoginContainer>
             </LoginWrapper>
 
         </>

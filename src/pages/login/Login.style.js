@@ -21,14 +21,19 @@ export const LoginWrapper = styled.div`
 
 `;
 
-export const ContactContainer = styled.div`
+export const LoginContainer = styled.div`
   scale: 150%;
   width: 400px;
   background-color: #f0f0f0;
   border-radius: 8px;
   box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.4); /* Add drop shadow */
 
+  @media (max-width: 700px) {
+    width: 300px;
+    
+  
 
+  }
 
 `;
 
@@ -57,6 +62,29 @@ export const FormContainer = styled.div`
 
   
   }
+
+  @media (max-width: 700px) {
+
+      
+        
+    p { 
+      color: white;
+      text-align: center;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+  
+    svg {
+  
+    
+      padding: 19px 12px;
+  
+    
+    }
+    
+  
+
+  
  }
 `;
 
@@ -148,5 +176,13 @@ a {
   color: black;
   border
 }
+
+  @media (max-width: 700px) {
+
+    a {
+      font-size: 12px;
+    }
+  
+  }
 `;
 
