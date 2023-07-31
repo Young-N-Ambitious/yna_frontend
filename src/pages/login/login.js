@@ -13,11 +13,9 @@ const Login = () => {
                         <form>
 
                             <FormGroup>
-                                {/* <label htmlFor="email">Email:</label> */}
                                 <input type="email" id="email" name="email" placeholder="Email:" />
                             </FormGroup>
                             <FormGroup>
-                                {/* <label htmlFor="name">Name:</label> */}
                                 <input type="text" id="password" name="password" placeholder="Password:" />
                             </FormGroup>
                             <LoginButton type="submit">Log In</LoginButton>

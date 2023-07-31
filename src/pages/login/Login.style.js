@@ -22,7 +22,7 @@ export const LoginWrapper = styled.div`
 `;
 
 export const ContactContainer = styled.div`
-
+  scale: 150%;
   width: 400px;
   background-color: #f0f0f0;
   border-radius: 8px;
