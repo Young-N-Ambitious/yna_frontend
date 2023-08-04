@@ -67,7 +67,7 @@ export const FormWrapper = styled.div`
 
   }
 
-  @media (min-width: 1000px)  and (min-height: 600px) {
+  @media (width: 1024px)  and (height: 600px) {
     scale: 60%;
     height: 100vh;
     padding: 20px 0px; 
