@@ -6,7 +6,7 @@ background-color: white;
 background-color: #6a6863;
 
 @media (max-width: 700px) {
-
+  
   width: 100%;
   padding: 5px; /* Reduce padding for mobile view */
 
@@ -27,9 +27,55 @@ export const FormWrapper = styled.div`
     padding: 5px; /* Reduce padding for mobile view */
     height: 150vh;
            
-
+    
     /* You can ad+just other styles for smaller screens here */
   }
+
+  @media (max-width: 500px) {
+    scale: 80%;
+    height: 150vh;
+    padding: 30px 0px; 
+    
+    
+
+  }
+  
+  @media (max-width: 400px) {
+    scale: 70%;
+    height: 170vh;
+    padding: 100px 0px; 
+    
+    
+
+  }
+
+  @media (min-height: 700px) {
+    scale: 70%;
+    height: 150vh;
+    padding: 70px 0px; 
+    
+    
+
+  }
+
+  @media (min-height: 1000px) {
+    scale: 90%;
+    height: 100vh;
+    padding: 20px 0px; 
+    
+    
+
+  }
+
+  @media (min-width: 1000px)  and (min-height: 600px) {
+    scale: 60%;
+    height: 100vh;
+    padding: 20px 0px; 
+    
+    
+
+  }
+
 
 
 `;
