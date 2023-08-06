@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../globalComponents/navBar/NavBar";
 import { LoginWrapper, LoginContainer, FormContainer, FormGroup, LoginButton, ApplyButton } from "./Login.style.js";
-
+import { NavLink } from "react-router-dom";
 const Login = () => {
     return (
         <>
@@ -35,12 +35,8 @@ const Login = () => {
                             <p> Sign up to join YNA </p>
 
                             <ApplyButton type="submit">
-                                <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer">
-                                    Apply Here
-                                </a>
+                                <NavLink to="/join-us" > Apply Here </NavLink>
                             </ApplyButton>
-
-
 
                         </div>
 
