@@ -193,7 +193,7 @@ export const FormGroup = styled.div`
   textarea {
     width: 90%;
     padding: 18px;
-    border: 1px solid #ffc10061; /* Changed border color to #FFC100 */
+    border: 1px solid #404040; /* Changed border color to #FFC100 */
     border-radius: 2px;
     background: #404040;
     ::placeholder { /* Added placeholder styling */
