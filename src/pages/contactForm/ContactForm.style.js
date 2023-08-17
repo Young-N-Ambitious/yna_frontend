@@ -198,7 +198,7 @@ export const FormGroup = styled.div`
     background: #404040;
     ::placeholder { /* Added placeholder styling */
       color: #ccc;
-      font-style: italic;
+      font-style: Poppins;
       font-size: 15px;
   }
 
