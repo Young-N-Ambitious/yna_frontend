@@ -146,8 +146,8 @@ const Modal = ({ open, onClose }) => {
                             About
                         </NavLink> */}
                         <HashLink onClick={onClose} smooth to="/#about-us" className="link" >
-                         About Us
-                         </HashLink>
+                            About Us
+                        </HashLink>
                     </MenuItem>
                     {/* <MenuItem>
                         <NavLink
@@ -179,7 +179,7 @@ const Modal = ({ open, onClose }) => {
                             Contact
                         </NavLink>
                     </MenuItem>
-                    {/* <MenuItem>
+                    <MenuItem>
                         <NavLink
                             onClick={onClose}
                             className="link"
@@ -188,7 +188,7 @@ const Modal = ({ open, onClose }) => {
                         >
                             Login
                         </NavLink>
-                    </MenuItem> */}
+                    </MenuItem>
                 </MenuList>
             </ModalContent>
         </ModalOverlay>
