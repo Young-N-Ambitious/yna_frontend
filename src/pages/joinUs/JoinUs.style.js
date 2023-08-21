@@ -26,13 +26,16 @@ background-color: #6a6863;
 
 export const FormWrapper = styled.div`
 max-width: 100%;
-padding: 50px;
+padding: 100px 20px;
 margin: 0 auto;
-height: 100% /* Adjust the height as needed */
+height: 50% /* Adjust the height as needed */
 overflow-y: auto;
 
   
 `;
+
+
+
 
 export const QuestionContainer = styled.div`
   background-color: black;
@@ -42,7 +45,7 @@ export const QuestionContainer = styled.div`
 `;
 
 export const Question = styled.div`
-  margin-bottom: 20px;
+  margin: 20px;
 `;
 
 export const Label = styled.label`
@@ -52,7 +55,7 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-  width: 100%;
+  width: 95%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -60,10 +63,13 @@ export const Input = styled.input`
 
 export const RadioGroup = styled.div`
   margin-top: 5px;
+  font-size: 12px;
+  // padding-right: 100px;
 `;
 
 export const RadioButton = styled.input`
   margin-right: 5px;
+
 `;
 
 export const SubmitButton = styled.button`
