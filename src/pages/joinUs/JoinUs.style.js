@@ -1,38 +1,76 @@
 import styled from "styled-components";
 
-export const JoinStyle = styled.div`
-  background-color: white;
-  font-family: "Inter";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
+
+export const JoinUsStyle = styled.div`
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #6a6863;
+
+
+ 
+@media (max-width: 700px) {
+
+  width: 100%;
+  padding: 5px; /* Reduce padding for mobile view */
+
+         
+
+  /* You can adjust other styles for smaller screens here */
+}
+
+
+`;
+
+export const FormWrapper = styled.div`
+max-width: 100%;
+padding: 50px;
+margin: 0 auto;
+height: 100% /* Adjust the height as needed */
+overflow-y: auto;
+
+  
+`;
+
+export const QuestionContainer = styled.div`
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+`;
+
+export const Question = styled.div`
+  margin-bottom: 20px;
+`;
+
+export const Label = styled.label`
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+`;
+
+export const Input = styled.input`
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+`;
+
+export const RadioGroup = styled.div`
+  margin-top: 5px;
+`;
+
+export const RadioButton = styled.input`
+  margin-right: 5px;
+`;
+
+export const SubmitButton = styled.button`
   background-color: #6a6863;
-  color: #ffffff;
-  height: 74.5rem;
-
-  .join-us {
-    padding: 10px 30px;
-    background-color: black;
-    // will change color once i update the icon colors
-    font-family: "Inter";
-    h2 {
-      color: #ffc700;
-    }
-    iframe {
-      display: block;
-      margin: auto;
-    }
-    text-align: center;
-  }
-
-  @media (max-width: 700px) {
-    .contact {
-      width: 100%;
-    }
-    .form {
-      width: 100%;
-    }
-  }
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 `;
