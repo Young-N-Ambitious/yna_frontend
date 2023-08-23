@@ -24,21 +24,58 @@ background-color: #6a6863;
 
 `;
 
+
+
 export const FormWrapper = styled.div`
-max-width: 100%;
+max-width: 70%;
 padding: 100px 20px;
 margin: 0 auto;
-height: 50% /* Adjust the height as needed */
+height: 10% /* Adjust the height as needed */
 overflow-y: auto;
 
-  
+
+
 `;
 
 
 
+export const OuterBox = styled.div `
+max-width: 100%;
+padding: 50px 100px;
+margin: 0px auto;
+background-color: black;
+
+h3 {
+  
+color: #FFD644;
+font-size: 30px;
+text-align: center;
+
+}
+
+
+@media (max-width: 700px) {
+
+  padding: 50px 30px;
+/* Reduce padding for mobile view */
+
+         
+  h3 {
+  
+    color: #FFD644;
+    font-size: 18px;
+    text-align: center;
+    
+    }
+  /* You can adjust other styles for smaller screens here */
+}
+
+`
+
 
 export const QuestionContainer = styled.div`
   background-color: black;
+  border: 2px solid #FFD644;
   color: white;
   padding: 20px;
   border-radius: 4px;
