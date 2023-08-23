@@ -85,7 +85,7 @@ const ScrollableFormContainer = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #FFD644; /* Custom scrollbar thumb color */
+    background-color: white; /* Custom scrollbar thumb color */
     border-radius: 5px;
    
   }
@@ -118,6 +118,7 @@ export const QuestionContainer = styled.div`
 export const Question = styled.div`
   margin: 20px;
 
+  
 
 `;
 
@@ -140,6 +141,9 @@ export const Input = styled.input`
   width: 95%;
   padding: 8px;
   border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #404040;
+  border: 1px solid black; /* Changed border color to #FFC100 */
   border-radius: 4px;
 
   @media (max-width: 700px) {
@@ -385,6 +389,7 @@ const Form = () => {
                                         name="whyjoin"
                                         value={formData.whyjoin || ''}
                                         onChange={handleInputChange}
+                                        style={{ height: '100px' }}
                                     />
                                 </Question>
 
@@ -395,6 +400,7 @@ const Form = () => {
                                         name="prof"
                                         value={formData.profession || ''}
                                         onChange={handleInputChange}
+                                        style={{ height: '50px' }}
                                     />
                                 </Question>
 
@@ -405,6 +411,7 @@ const Form = () => {
                                         name="goals"
                                         value={formData.goals || ''}
                                         onChange={handleInputChange}
+                                        style={{ height: '100px' }}
                                     />
                                 </Question>
 
@@ -477,6 +484,7 @@ const Form = () => {
                                         name="addresss"
                                         value={formData.address || ''}
                                         onChange={handleInputChange}
+                                        style={{ height: '60px' }}
                                     />
                                 </Question>
 
