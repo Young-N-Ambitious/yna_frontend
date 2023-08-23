@@ -188,14 +188,28 @@ export const SubmitButton = styled.button`
 const Form = () => {
     const [formData, setFormData] = useState({});
 
+    const nameToPropertyMap = {
+        'entry.2005620554': 'firstName',
+        'entry.2044770469': 'lastName',
+        'entry.1045781291': 'email',
+        'entry.1166974658': 'phone',
+      
+        // ... Add more mappings for other fields
+      };
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
-
+        const mappedName = nameToPropertyMap[name]; // Use a mapping object to translate the form names to property names
+        if (mappedName) {
+          setFormData((prevData) => ({
+            ...prevData,
+            [mappedName]: value,
+          }));
+        }
+      };
     const handleSubmit = () => {
         // Assuming you have a Google Form URL
-        const googleFormUrl = 'https://docs.google.com/forms/d/e/...'; // Replace with your Google Form URL
+        const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdGJcaJIQOWP3RiGe9Gpp57JdnTLuhbKlrCqCeLvL2fkiREng/viewform?usp=sf_link'; // Replace with your Google Form URL
         window.location.href = googleFormUrl;
     };
 
@@ -208,81 +222,81 @@ const Form = () => {
                 <FormWrapper>
                     <OuterBox>
                         <h3> Google App File</h3>
+                        <form onSubmit={handleSubmit}>
+                            <QuestionContainer>
+                                <ScrollableFormContainer>
+                                    <Question>
+                                        <Label>First Name</Label>
+                                        <Input
+                                            type="text"
+                                            name="entry.2005620554"
+                                            value={formData.firstName || ''}
+                                            onChange={handleInputChange}
+                                        />
+                                    </Question>
+                                    <Question>
+                                        <Label> Last Name</Label>
+                                        <Input
+                                            type="text"
+                                            name="entry.2044770469"
+                                            value={formData.lastName || ''}
+                                            onChange={handleInputChange}
+                                        />
+                                    </Question>
+                                    <Question>
+                                        <Label>Email</Label>
+                                        <Input
+                                            type="email"
+                                            name="entry.1045781291"
+                                            value={formData.email || ''}
+                                            onChange={handleInputChange}
+                                        />
+                                    </Question>
+                                    <Question>
+                                        <Label>Phone Number</Label>
+                                        <Input
+                                            type="text"
+                                            name="entry.1166974658"
+                                            value={formData.phone || ''}
+                                            onChange={handleInputChange}
+                                        />
+                                    </Question>
+                                    {/* <Question>
+                                        <Label>Nearest region?</Label>
+                                        <RadioGroup>
+                                            <RadioButton
+                                                type="radio"
+                                                name="entry.839337160"
+                                                value="atlanta"
+                                                onChange={handleInputChange}
+                                            />
+                                            Atlanta, GA
+                                            <RadioButton
+                                                type="radio"
+                                                name="entry.839337160"
+                                                value="ny"
+                                                onChange={handleInputChange}
+                                            />
+                                            New York, NY
 
-                        <QuestionContainer>
-                            <ScrollableFormContainer>
-                                <Question>
-                                    <Label>First Name</Label>
-                                    <Input
-                                        type="text"
-                                        name="firstName"
-                                        value={formData.firstName || ''}
-                                        onChange={handleInputChange}
-                                    />
-                                </Question>
-                                <Question>
-                                    <Label> Last Name</Label>
-                                    <Input
-                                        type="text"
-                                        name="lastName"
-                                        value={formData.lastName || ''}
-                                        onChange={handleInputChange}
-                                    />
-                                </Question>
-                                <Question>
-                                    <Label>Email</Label>
-                                    <Input
-                                        type="email"
-                                        name="email"
-                                        value={formData.email || ''}
-                                        onChange={handleInputChange}
-                                    />
-                                </Question>
-                                <Question>
-                                    <Label>Phone Number</Label>
-                                    <Input
-                                        type="text"
-                                        name="phone"
-                                        value={formData.phone || ''}
-                                        onChange={handleInputChange}
-                                    />
-                                </Question>
-                                <Question>
-                                    <Label>Nearest region?</Label>
-                                    <RadioGroup>
-                                        <RadioButton
-                                            type="radio"
-                                            name="source"
-                                            value="atlanta"
-                                            onChange={handleInputChange}
-                                        />
-                                        Atlanta, GA
-                                        <RadioButton
-                                            type="radio"
-                                            name="source"
-                                            value="ny"
-                                            onChange={handleInputChange}
-                                        />
-                                        New York, NY
 
-
-                                        <RadioButton
-                                            type="radio"
-                                            name="source"
-                                            value="oakland"
-                                            onChange={handleInputChange}
-                                        />
-                                        Oakland, CA
-                                        <RadioButton
-                                            type="radio"
-                                            name="source"
-                                            value="houston"
-                                            onChange={handleInputChange}
-                                        />
-                                        Houston, Texas
-                                    </RadioGroup>
-                                </Question>
-                                <Question>
+                                            <RadioButton
+                                                type="radio"
+                                                name="entry.839337160"
+                                                value="oakland"
+                                                onChange={handleInputChange}
+                                            />
+                                            Oakland, CA
+                                            <RadioButton
+                                                type="radio"
+                                                name="entry.839337160"
+                                                value="houston"
+                                                onChange={handleInputChange}
+                                            />
+                                            Houston, Texas
+                                        </RadioGroup>
+                                    </Question> */}
+                                    {/* <Question>
 
                                     <Label>Are you a student?</Label>
                                     <RadioGroup>
@@ -506,11 +520,13 @@ const Form = () => {
                                         value={formData.twitter || ''}
                                         onChange={handleInputChange}
                                     />
-                                </Question>
+                                </Question> */}
 
-                                <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
-                            </ScrollableFormContainer>
-                        </QuestionContainer>
+                                    <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
+                                </ScrollableFormContainer>
+                            </QuestionContainer>
+                        </form>
+
 
                     </OuterBox>
                 </FormWrapper>
