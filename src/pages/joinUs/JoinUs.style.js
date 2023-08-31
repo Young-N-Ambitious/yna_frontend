@@ -27,19 +27,33 @@ background-color: #6a6863;
 
 
 export const FormWrapper = styled.div`
-max-width: 70%;
-padding: 100px 20px;
+max-width: 50%;
+padding: 210px 20px;
 margin: 0 auto;
-height: 10% /* Adjust the height as needed */
-overflow-y: auto;
 
+
+@media (max-width: 1200px) {
+  max-width: 70%;
+ 
+
+}
+@media (max-width: 950px) {
+  max-width: 80%;
+ 
+
+}
+
+
+@media (max-width: 700px) {
+
+    max-width: 80%;
 
 
 `;
 
 
 
-export const OuterBox = styled.div `
+export const OuterBox = styled.div`
 max-width: 100%;
 padding: 50px 100px;
 margin: 0px auto;
@@ -54,9 +68,15 @@ text-align: center;
 }
 
 
+@media (max-width: 850px) {
+
+  padding: 40px 40px;
+
+}
+
 @media (max-width: 700px) {
 
-  padding: 50px 30px;
+  padding: 40px 30px;
 /* Reduce padding for mobile view */
 
          
@@ -72,6 +92,33 @@ text-align: center;
 
 `
 
+export const ScrollableFormContainer = styled.div`
+  max-height: 48vh; /* Adjust the maximum height as needed */
+  overflow-y: auto;
+
+  /* Set the custom scrollbar style */
+  ::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: white; /* Custom scrollbar thumb color */
+    border-radius: 5px;
+   
+  }
+
+  @media (max-width: 700px) {
+
+    max-height: 40vh;
+  
+           
+  
+    /* You can adjust other styles for smaller screens here */
+  }
+
+
+`;
+
 
 export const QuestionContainer = styled.div`
   background-color: black;
@@ -79,16 +126,32 @@ export const QuestionContainer = styled.div`
   color: white;
   padding: 20px;
   border-radius: 4px;
+
+   
+
+  
 `;
 
 export const Question = styled.div`
   margin: 20px;
+
+  
+
 `;
 
 export const Label = styled.label`
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+
+  @media (max-width: 700px) {
+
+    font-size: 12px;
+  
+           
+  
+    /* You can adjust other styles for smaller screens here */
+  }
 `;
 
 export const Input = styled.input`
@@ -96,12 +159,33 @@ export const Input = styled.input`
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background: #404040;
+  border: 1px solid black; /* Changed border color to #FFC100 */
+  border-radius: 4px;
+
+  @media (max-width: 700px) {
+
+    padding: 4px;
+  
+           
+  
+    /* You can adjust other styles for smaller screens here */
+  }
 `;
 
 export const RadioGroup = styled.div`
   margin-top: 5px;
   font-size: 12px;
   // padding-right: 100px;
+
+  @media (max-width: 700px) {
+
+    font-size: 9px;
+  
+           
+  
+    /* You can adjust other styles for smaller screens here */
+  }
 `;
 
 export const RadioButton = styled.input`
