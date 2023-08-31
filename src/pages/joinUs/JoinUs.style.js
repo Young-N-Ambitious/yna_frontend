@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import "@fontsource/poppins";
 
 export const JoinUsStyle = styled.div`
 background-color: white;
@@ -194,10 +194,65 @@ export const RadioButton = styled.input`
 `;
 
 export const SubmitButton = styled.button`
-  background-color: #6a6863;
+  width: 40%;
+  padding: 8px;
+  border: 2px solid #ffc700;
+  border-radius: 14px;
+  background-color: black;
+  margin: 10px 200px;
   color: white;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
   cursor: pointer;
-`;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Poppins"; /* Use Poppins font for p elements */
+  font-size: 20px;
+  font-weight: 400;
+  &:hover {
+    background-color: #ffc700;
+    color: black;
+    border
+  }
+
+
+  
+// @media (max-width: 1800px) {
+ 
+//   margin: 10px 150px;
+
+// }
+// @media (max-width: 1500px) {
+ 
+//   margin: 10px 120px;
+
+// }
+// @media (max-width: 1300px) {
+ 
+//   margin: 10px 100px;
+
+// }
+// @media (max-width: 1200px) {
+ 
+//   margin: 10px 150px;
+
+// }
+@media (max-width: 1100px) {
+  margin: 10px 100px;  
+
+  
+}
+
+
+// @media (max-width: 700px) {
+
+//   margin: 10px 90px;  
+
+
+// }
+@media (min-width: 350px) {
+
+  margin: 10px 50px;  
+  font-size: 15px;
+
+}
+
+`
+;
