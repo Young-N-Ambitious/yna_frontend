@@ -211,26 +211,7 @@ export const SubmitButton = styled.button`
 
 
   
-// @media (max-width: 1800px) {
- 
-//   margin: 10px 150px;
 
-// }
-// @media (max-width: 1500px) {
- 
-//   margin: 10px 120px;
-
-// }
-// @media (max-width: 1300px) {
- 
-//   margin: 10px 100px;
-
-// }
-// @media (max-width: 1200px) {
- 
-//   margin: 10px 150px;
-
-// }
 @media (max-width: 1100px) {
   margin: 10px 100px;  
 
@@ -238,16 +219,11 @@ export const SubmitButton = styled.button`
 }
 
 
-// @media (max-width: 700px) {
+@media (min-width: 280px) {
 
-//   margin: 10px 90px;  
-
-
-// }
-@media (min-width: 350px) {
-
-  margin: 10px 50px;  
-  font-size: 15px;
+  margin: 10px 20px;  
+  font-size: 10px;
+  
 
 }
 
