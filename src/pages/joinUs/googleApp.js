@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import NavBar from "../globalComponents/navBar/NavBar";
-
+import "@fontsource/poppins";
 
 export const JoinUsStyle = styled.div`
 background-color: white;
@@ -33,9 +33,22 @@ max-width: 50%;
 padding: 210px 20px;
 margin: 0 auto;
 
+
+@media (max-width: 1200px) {
+  max-width: 70%;
+ 
+
+}
+@media (max-width: 950px) {
+  max-width: 80%;
+ 
+
+}
+
+
 @media (max-width: 700px) {
 
-    max-width: 100%;
+    max-width: 80%;
 
 
 `;
@@ -57,6 +70,12 @@ text-align: center;
 }
 
 
+@media (max-width: 850px) {
+
+  padding: 40px 40px;
+
+}
+
 @media (max-width: 700px) {
 
   padding: 40px 30px;
@@ -75,7 +94,7 @@ text-align: center;
 
 `
 
-const ScrollableFormContainer = styled.div`
+export const ScrollableFormContainer = styled.div`
   max-height: 48vh; /* Adjust the maximum height as needed */
   overflow-y: auto;
 
@@ -92,7 +111,7 @@ const ScrollableFormContainer = styled.div`
 
   @media (max-width: 700px) {
 
-    max-height: 80vh;
+    max-height: 40vh;
   
            
   
@@ -157,384 +176,424 @@ export const Input = styled.input`
 `;
 
 export const RadioGroup = styled.div`
+  display: flex;
+  flex-wrap: wrap; /* Allow radio buttons to wrap on small screens */
   margin-top: 5px;
   font-size: 12px;
-  // padding-right: 100px;
 
   @media (max-width: 700px) {
-
     font-size: 9px;
-  
-           
-  
-    /* You can adjust other styles for smaller screens here */
   }
 `;
 
 export const RadioButton = styled.input`
   margin-right: 5px;
+  margin-bottom: 5px
 
 `;
 
 export const SubmitButton = styled.button`
-  background-color: #6a6863;
+  width: 40%;
+  padding: 8px;
+  border: 2px solid #ffc700;
+  border-radius: 14px;
+  background-color: black;
+  margin: 10px 200px;
   color: white;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
   cursor: pointer;
-`;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Poppins"; /* Use Poppins font for p elements */
+  font-size: 20px;
+  font-weight: 400;
+  &:hover {
+    background-color: #ffc700;
+    color: black;
+    border
+  }
+
+
+  
+// @media (max-width: 1800px) {
+ 
+//   margin: 10px 150px;
+
+// }
+// @media (max-width: 1500px) {
+ 
+//   margin: 10px 120px;
+
+// }
+// @media (max-width: 1300px) {
+ 
+//   margin: 10px 100px;
+
+// }
+// @media (max-width: 1200px) {
+ 
+//   margin: 10px 150px;
+
+// }
+@media (max-width: 1100px) {
+  margin: 10px 100px;  
+
+  
+}
+
+
+// @media (max-width: 700px) {
+
+//   margin: 10px 90px;  
+
+
+// }
+@media (min-width: 350px) {
+
+  margin: 10px 50px;  
+  font-size: 15px;
+
+}
+
+`
+    ;
+
 
 const Form = () => {
     const [formData, setFormData] = useState({});
 
-    const nameToPropertyMap = {
-        'entry.2005620554': 'firstName',
-        'entry.2044770469': 'lastName',
-        'entry.1045781291': 'email',
-        'entry.1166974658': 'phone',
+    // const nameToPropertyMap = {
+    //     'entry.2005620554': 'firstName',
+    //     'entry.2044770469': 'lastName',
+    //     'entry.1045781291': 'email',
+    //     'entry.1166974658': 'phone',
 
-        // ... Add more mappings for other fields
-    };
+    //     // ... Add more mappings for other fields
+    // };
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        const mappedName = nameToPropertyMap[name]; // Use a mapping object to translate the form names to property names
-        if (mappedName) {
-            setFormData((prevData) => ({
-                ...prevData,
-                [mappedName]: value,
-            }));
-        }
+        setFormData({ ...formData, [name]: value });
     };
+
     const handleSubmit = () => {
         // Assuming you have a Google Form URL
-        const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdGJcaJIQOWP3RiGe9Gpp57JdnTLuhbKlrCqCeLvL2fkiREng/viewform?usp=sf_link'; // Replace with your Google Form URL
-        window.location.href = googleFormUrl;
+        // const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdGJcaJIQOWP3RiGe9Gpp57JdnTLuhbKlrCqCeLvL2fkiREng/viewform?usp=sf_link'; // Replace with your Google Form URL
+        // window.location.href = googleFormUrl;
     };
 
     return (
         <>
             <NavBar />
 
+
             <JoinUsStyle>
 
                 <FormWrapper>
                     <OuterBox>
-                        <h3> Google App File</h3>
-                        <form onSubmit={handleSubmit}>
-                            <QuestionContainer>
-                                <ScrollableFormContainer>
-                                    <Question>
-                                        <Label>First Name</Label>
-                                        <Input
-                                            type="text"
-                                            name="entry.2005620554"
-                                            value={formData.firstName || ''}
+                        <h3> YNA Member Application</h3>
+                        <QuestionContainer>
+                            <ScrollableFormContainer>
+                                <Question>
+                                    <Label>First Name</Label>
+                                    <Input
+                                        type="text"
+                                        name="firstName"
+                                        value={formData.firstName || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+                                <Question>
+                                    <Label> Last Name</Label>
+                                    <Input
+                                        type="text"
+                                        name="lastName"
+                                        value={formData.lastName || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+                                <Question>
+                                    <Label>Email</Label>
+                                    <Input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+                                <Question>
+                                    <Label>Phone Number</Label>
+                                    <Input
+                                        type="text"
+                                        name="phone"
+                                        value={formData.phone || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+                                <Question>
+                                    <Label>Nearest region?</Label>
+                                    <RadioGroup>
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="atlanta"
                                             onChange={handleInputChange}
                                         />
-                                    </Question>
-                                    <Question>
-                                        <Label> Last Name</Label>
-                                        <Input
-                                            type="text"
-                                            name="entry.2044770469"
-                                            value={formData.lastName || ''}
+                                        Atlanta, GA
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="ny"
                                             onChange={handleInputChange}
                                         />
-                                    </Question>
-                                    <Question>
-                                        <Label>Email</Label>
-                                        <Input
-                                            type="email"
-                                            name="entry.1045781291"
-                                            value={formData.email || ''}
+                                        New York, NY
+
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="oakland"
                                             onChange={handleInputChange}
                                         />
-                                    </Question>
-                                    <Question>
-                                        <Label>Phone Number</Label>
-                                        <Input
-                                            type="text"
-                                            name="entry.1166974658"
-                                            value={formData.phone || ''}
+                                        Oakland, CA
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="houston"
                                             onChange={handleInputChange}
                                         />
-                                    </Question>
-                                    <Question>
-                                        <Label>Nearest region?</Label>
-                                        <RadioGroup>
-                                            <RadioButton
-                                                type="radio"
-                                                name="entry.839337160"
-                                                value="atlanta"
-                                                onChange={handleInputChange}
-                                            />
-                                            Atlanta, GA
-                                            <RadioButton
-                                                type="radio"
-                                                name="entry.839337160"
-                                                value="ny"
-                                                onChange={handleInputChange}
-                                            />
-                                            New York, NY
+                                        Houston, Texas
+                                    </RadioGroup>
+                                </Question>
+                                <Question>
 
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="entry.839337160"
-                                                value="oakland"
-                                                onChange={handleInputChange}
-                                            />
-                                            Oakland, CA
-                                            <RadioButton
-                                                type="radio"
-                                                name="entry.839337160"
-                                                value="houston"
-                                                onChange={handleInputChange}
-                                            />
-                                            Houston, Texas
-                                        </RadioGroup>
-                                    </Question>
-                                    <Question>
-
-                                        <Label>Are you a student?</Label>
-                                        <RadioGroup>
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="yes"
-                                                onChange={handleInputChange}
-                                            />
-                                            Yes
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="no"
-                                                onChange={handleInputChange}
-                                            />
-                                            No
-                                        </RadioGroup>
-                                    </Question>
-
-                                    <Question>
-                                        <Label>If you are a student, what school did you attend? <br /> (if N/A skip)</Label>
-                                        <Input
-                                            type="text"
-                                            name="school"
-                                            value={formData.school || ''}
+                                    <Label>Are you a student?</Label>
+                                    <RadioGroup>
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="yes"
                                             onChange={handleInputChange}
                                         />
-                                    </Question>
-
-                                    <Question>
-                                        <Label>Are looking to join our open source project portal?</Label>
-                                        <RadioGroup>
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="yes-join"
-                                                onChange={handleInputChange}
-                                            />
-                                            Yes
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="no-join"
-                                                onChange={handleInputChange}
-                                            />
-                                            No
-                                        </RadioGroup>
-                                    </Question>
-
-                                    <Question>
-                                        <Label>What open source project team do you want to join? <br />  (if N/A skip)</Label>
-                                        <RadioGroup>
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="frontend-Design"
-                                                onChange={handleInputChange}
-                                            /> Frontend Design
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="frontend-Arc"
-                                                onChange={handleInputChange}
-                                            /> Frontend Architecture
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="backend-API"
-                                                onChange={handleInputChange}
-                                            /> Backend API
-
-
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="documentation"
-                                                onChange={handleInputChange}
-                                            /> Documentation
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="security"
-                                                onChange={handleInputChange}
-                                            /> Security
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="PM"
-                                                onChange={handleInputChange}
-                                            /> Project Management
-                                        </RadioGroup>
-                                    </Question>
-
-                                    <Question>
-                                        <Label>Why would you like to join YNA?*</Label>
-                                        <Input
-                                            type="text"
-                                            name="whyjoin"
-                                            value={formData.whyjoin || ''}
-                                            onChange={handleInputChange}
-                                            style={{ height: '100px' }}
-                                        />
-                                    </Question>
-
-                                    <Question>
-                                        <Label>Whats your current profession?*</Label>
-                                        <Input
-                                            type="text"
-                                            name="prof"
-                                            value={formData.profession || ''}
-                                            onChange={handleInputChange}
-                                            style={{ height: '50px' }}
-                                        />
-                                    </Question>
-
-                                    <Question>
-                                        <Label>What are your professional goals?*</Label>
-                                        <Input
-                                            type="text"
-                                            name="goals"
-                                            value={formData.goals || ''}
-                                            onChange={handleInputChange}
-                                            style={{ height: '100px' }}
-                                        />
-                                    </Question>
-
-                                    <Question>
-                                        <Label>Would you like a YNA shirt? What's your t-shirt size? (unisex) <br /> (if N/A skip)</Label>
-                                        <RadioGroup>
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="small"
-                                                onChange={handleInputChange}
-                                            /> Small
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="Medium"
-                                                onChange={handleInputChange}
-                                            /> Medium
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="Large"
-                                                onChange={handleInputChange}
-                                            /> Large
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="XL"
-                                                onChange={handleInputChange}
-                                            /> X-Large
-
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="2X"
-                                                onChange={handleInputChange}
-                                            /> 2X-Large
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="3X"
-                                                onChange={handleInputChange}
-                                            /> 3X-Large
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="4X"
-                                                onChange={handleInputChange}
-                                            /> 4X-Large
-
-                                            <RadioButton
-                                                type="radio"
-                                                name="source"
-                                                value="5X"
-                                                onChange={handleInputChange}
-                                            /> 5X-Large
-                                        </RadioGroup>
-                                    </Question>
-
-                                    <Question>
-                                        <Label>Shipping Address (Street #, City, State, Zip) (if N/A skip)
-                                            <br />  Where would you like us to ship your t-shirt?</Label>
-                                        <Input
-                                            type="text"
-                                            name="addresss"
-                                            value={formData.address || ''}
-                                            onChange={handleInputChange}
-                                            style={{ height: '60px' }}
-                                        />
-                                    </Question>
-
-                                    <Question>
-                                        <Label>LinkedIn Profile Link (if N/A skip)</Label>
-                                        <Input
-                                            type="text"
-                                            name="linkedin"
-                                            value={formData.linkdin || ''}
+                                        Yes
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="no"
                                             onChange={handleInputChange}
                                         />
-                                    </Question>
+                                        No
+                                    </RadioGroup>
+                                </Question>
 
-                                    <Question>
-                                        <Label>Twitter Profile Link (if N/A skip)</Label>
-                                        <Input
-                                            type="text"
-                                            name="twitter"
-                                            value={formData.twitter || ''}
+                                <Question>
+                                    <Label>If you are a student, what school did you attend? <br /> (if N/A skip)</Label>
+                                    <Input
+                                        type="text"
+                                        name="school"
+                                        value={formData.school || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+
+                                <Question>
+                                    <Label>Are looking to join our open source project portal?</Label>
+                                    <RadioGroup>
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="yes-join"
                                             onChange={handleInputChange}
                                         />
-                                    </Question>
+                                        Yes
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="no-join"
+                                            onChange={handleInputChange}
+                                        />
+                                        No
+                                    </RadioGroup>
+                                </Question>
 
-                                    <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
-                                </ScrollableFormContainer>
-                            </QuestionContainer>
-                        </form>
+                                <Question>
+                                    <Label>What open source project team do you want to join? <br />  (if N/A skip)</Label>
+                                    <RadioGroup>
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="frontend-Design"
+                                            onChange={handleInputChange}
+                                        /> Frontend Design
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="frontend-Arc"
+                                            onChange={handleInputChange}
+                                        /> Frontend Architecture
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="backend-API"
+                                            onChange={handleInputChange}
+                                        /> Backend API
 
 
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="documentation"
+                                            onChange={handleInputChange}
+                                        /> Documentation
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="security"
+                                            onChange={handleInputChange}
+                                        /> Security
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="PM"
+                                            onChange={handleInputChange}
+                                        /> Project Management
+                                    </RadioGroup>
+                                </Question>
+
+                                <Question>
+                                    <Label>Why would you like to join YNA?*</Label>
+                                    <Input
+                                        type="text"
+                                        name="whyjoin"
+                                        value={formData.whyjoin || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+
+                                <Question>
+                                    <Label>Whats your current profession?*</Label>
+                                    <Input
+                                        type="text"
+                                        name="prof"
+                                        value={formData.profession || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+
+                                <Question>
+                                    <Label>What are your professional goals?*</Label>
+                                    <Input
+                                        type="text"
+                                        name="goals"
+                                        value={formData.goals || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+
+                                <Question>
+                                    <Label>Would you like a YNA shirt? What's your t-shirt size? (unisex) <br /> (if N/A skip)</Label>
+                                    <RadioGroup>
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="small"
+                                            onChange={handleInputChange}
+                                        /> Small
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="Medium"
+                                            onChange={handleInputChange}
+                                        /> Medium
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="Large"
+                                            onChange={handleInputChange}
+                                        /> Large
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="XL"
+                                            onChange={handleInputChange}
+                                        /> X-Large
+
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="2X"
+                                            onChange={handleInputChange}
+                                        /> 2X-Large
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="3X"
+                                            onChange={handleInputChange}
+                                        /> 3X-Large
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="4X"
+                                            onChange={handleInputChange}
+                                        /> 4X-Large
+
+                                        <RadioButton
+                                            type="radio"
+                                            name="source"
+                                            value="5X"
+                                            onChange={handleInputChange}
+                                        /> 5X-Large
+                                    </RadioGroup>
+                                </Question>
+
+                                <Question>
+                                    <Label>Shipping Address (Street #, City, State, Zip) (if N/A skip)
+                                        <br />  Where would you like us to ship your t-shirt?</Label>
+                                    <Input
+                                        type="text"
+                                        name="addresss"
+                                        value={formData.address || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+
+                                <Question>
+                                    <Label>LinkedIn Profile Link (if N/A skip)</Label>
+                                    <Input
+                                        type="text"
+                                        name="linkedin"
+                                        value={formData.linkdin || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+
+                                <Question>
+                                    <Label>Twitter Profile Link (if N/A skip)</Label>
+                                    <Input
+                                        type="text"
+                                        name="twitter"
+                                        value={formData.twitter || ''}
+                                        onChange={handleInputChange}
+                                    />
+                                </Question>
+
+                                <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
+                            </ScrollableFormContainer>
+                        </QuestionContainer>
                     </OuterBox>
                 </FormWrapper>
 
 
 
             </JoinUsStyle>
-
 
         </>
 

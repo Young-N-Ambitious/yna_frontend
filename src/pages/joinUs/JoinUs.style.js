@@ -174,22 +174,19 @@ export const Input = styled.input`
 `;
 
 export const RadioGroup = styled.div`
+  display: flex;
+  flex-wrap: wrap; /* Allow radio buttons to wrap on small screens */
   margin-top: 5px;
   font-size: 12px;
-  // padding-right: 100px;
 
   @media (max-width: 700px) {
-
     font-size: 9px;
-  
-           
-  
-    /* You can adjust other styles for smaller screens here */
   }
 `;
 
 export const RadioButton = styled.input`
   margin-right: 5px;
+  margin-bottom: 5px
 
 `;
 

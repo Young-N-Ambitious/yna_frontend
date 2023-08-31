@@ -11,9 +11,9 @@ const JoinUs = () => {
   };
 
   const handleSubmit = () => {
-    // Assuming you have a Google Form URL
-    const googleFormUrl = 'https://docs.google.com/forms/d/e/...'; // Replace with your Google Form URL
-    window.location.href = googleFormUrl;
+    //  Google Form URL
+    // const googleFormUrl = 'https://docs.google.com/forms/d/e/...'; // Replace with your Google Form URL
+    // window.location.href = googleFormUrl;
   };
 
   return (
