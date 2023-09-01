@@ -33,6 +33,7 @@ const JoinUs = () => {
                     type="text"
                     name="firstName"
                     value={formData.firstName || ''}
+
                     onChange={handleInputChange}
                   />
                 </Question>
@@ -42,6 +43,7 @@ const JoinUs = () => {
                     type="text"
                     name="lastName"
                     value={formData.lastName || ''}
+
                     onChange={handleInputChange}
                   />
                 </Question>
@@ -64,36 +66,54 @@ const JoinUs = () => {
                   />
                 </Question>
                 <Question>
+                  <Label>What is your github user name? <br />
+                    Use your correct github name if you have one (if N/A skip)</Label>
+                  <Input
+                    type="text"
+                    name="github"
+                    value={formData.github || ''}
+                    onChange={handleInputChange}
+                  />
+                </Question>
+                <Question>
                   <Label>Nearest region?</Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="nearestRegion"
                       value="atlanta"
+
                       onChange={handleInputChange}
                     />
                     Atlanta, GA
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="nearestRegion"
                       value="ny"
+
                       onChange={handleInputChange}
+
+
                     />
                     New York, NY
 
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="nearestRegion"
                       value="oakland"
+
                       onChange={handleInputChange}
+
                     />
                     Oakland, CA
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="nearestRegion"
                       value="houston"
+
                       onChange={handleInputChange}
+
                     />
                     Houston, Texas
                   </RadioGroup>
@@ -104,28 +124,33 @@ const JoinUs = () => {
                   <RadioGroup>
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="student"
                       value="yes"
+
                       onChange={handleInputChange}
+
                     />
                     Yes
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="student"
                       value="no"
+
                       onChange={handleInputChange}
+
                     />
                     No
                   </RadioGroup>
                 </Question>
 
                 <Question>
-                  <Label>If you are a student, what school did you attend? <br /> (if N/A skip)</Label>
+                  <Label>If you are a student, what school do you attend? <br /> (if N/A skip)</Label>
                   <Input
                     type="text"
                     name="school"
                     value={formData.school || ''}
                     onChange={handleInputChange}
+
                   />
                 </Question>
 
@@ -134,16 +159,20 @@ const JoinUs = () => {
                   <RadioGroup>
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="portal"
                       value="yes-join"
+
                       onChange={handleInputChange}
+
                     />
                     Yes
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="portal"
                       value="no-join"
+
                       onChange={handleInputChange}
+
                     />
                     No
                   </RadioGroup>
@@ -154,46 +183,57 @@ const JoinUs = () => {
                   <RadioGroup>
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="projectTeam"
                       value="frontend-Design"
+
                       onChange={handleInputChange}
+
                     /> Frontend Design
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="projectTeam"
                       value="frontend-Arc"
+
                       onChange={handleInputChange}
+
                     /> Frontend Architecture
 
                     <RadioButton
                       type="radio"
                       name="source"
                       value="backend-API"
+
                       onChange={handleInputChange}
+
                     /> Backend API
 
 
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="projectTeam"
                       value="documentation"
+
                       onChange={handleInputChange}
+
                     /> Documentation
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="projectTeam"
                       value="security"
+
                       onChange={handleInputChange}
+
                     /> Security
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="projectTeam"
                       value="PM"
                       onChange={handleInputChange}
+
                     /> Project Management
                   </RadioGroup>
                 </Question>
@@ -233,58 +273,66 @@ const JoinUs = () => {
                   <RadioGroup>
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="shirt"
                       value="small"
                       onChange={handleInputChange}
+
                     /> Small
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="shirt"
                       value="Medium"
                       onChange={handleInputChange}
+
                     /> Medium
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="shirt"
                       value="Large"
                       onChange={handleInputChange}
+
                     /> Large
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="shirt"
                       value="XL"
                       onChange={handleInputChange}
+
                     /> X-Large
 
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="shirt"
                       value="2X"
                       onChange={handleInputChange}
+
                     /> 2X-Large
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="shirt"
                       value="3X"
                       onChange={handleInputChange}
+
                     /> 3X-Large
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="shirt"
                       value="4X"
                       onChange={handleInputChange}
+
                     /> 4X-Large
 
                     <RadioButton
                       type="radio"
-                      name="source"
+                      name="shirt"
                       value="5X"
                       onChange={handleInputChange}
+
                     /> 5X-Large
                   </RadioGroup>
                 </Question>

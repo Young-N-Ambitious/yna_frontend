@@ -180,6 +180,7 @@ export const RadioGroup = styled.div`
   margin-top: 5px;
   font-size: 12px;
 
+  
   @media (max-width: 700px) {
     font-size: 9px;
   }
@@ -188,6 +189,15 @@ export const RadioGroup = styled.div`
 export const RadioButton = styled.input`
   margin-right: 5px;
   margin-bottom: 5px
+  
+  // Default styling for unselected radio buttons
+  background-color: white;
+
+  &:checked {
+    // Styling for checked (selected) radio buttons
+    background-color: yellow;
+}
+
 
 `;
 
