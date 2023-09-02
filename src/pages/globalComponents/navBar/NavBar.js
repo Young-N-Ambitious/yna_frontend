@@ -42,13 +42,13 @@ function NavBar() {
                          </HashLink>
         
          
-                        {/* <NavLink
+                        <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/members"
                         >
                             Members
-                        </NavLink> */}
+                        </NavLink>
                         <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
