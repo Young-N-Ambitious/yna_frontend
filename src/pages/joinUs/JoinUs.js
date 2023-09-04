@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavBar from "../globalComponents/navBar/NavBar";
-import { JoinUsStyle, FormWrapper, QuestionContainer, Question, OuterBox, Label, ScrollableFormContainer, Input, RadioButton, RadioGroup, SubmitButton } from "./JoinUs.style.js";
+import { JoinUsStyle, JoinNow, FormWrapper, QuestionContainer, Question, OuterBox, Label, ScrollableFormContainer, Input, RadioButton, RadioGroup, SubmitButton } from "./JoinUs.style.js";
 
 const JoinUs = () => {
   const [formData, setFormData] = useState({});
@@ -21,6 +21,13 @@ const JoinUs = () => {
       <NavBar />
 
       <JoinUsStyle>
+
+        <JoinNow>
+          <h2>JOIN NOW!</h2>
+          <h3>How do I join?</h3>
+          <p>We’re constantly researching and launching new projects and collaborations that are aligned with our vision. Follow us on Twitter or Instagram, and join our slack to stay up to date and connect with the YNA community.</p>
+
+        </JoinNow>
 
         <FormWrapper>
           <OuterBox>
@@ -252,7 +259,7 @@ const JoinUs = () => {
                   <Label>Whats your current profession?*</Label>
                   <Input
                     type="text"
-                    name="prof"
+                    name="profession"
                     value={formData.profession || ''}
                     onChange={handleInputChange}
                   />
@@ -342,7 +349,7 @@ const JoinUs = () => {
                     <br />  Where would you like us to ship your t-shirt?</Label>
                   <Input
                     type="text"
-                    name="addresss"
+                    name="address"
                     value={formData.address || ''}
                     onChange={handleInputChange}
                   />
@@ -353,7 +360,7 @@ const JoinUs = () => {
                   <Input
                     type="text"
                     name="linkedin"
-                    value={formData.linkdin || ''}
+                    value={formData.linkedin || ''}
                     onChange={handleInputChange}
                   />
                 </Question>

@@ -1306,6 +1306,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/inter@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.npmjs.org/@fontsource/inter/-/inter-5.0.8.tgz"
+  integrity sha512-28knWH1BfOiRalfLs90U4sge5mpQ8ZH6FS0PTT+IZMKrZ7wNHDHRuKa1kQJg+uHcc6axBppnxll+HXM4c7zo/Q==
+
 "@fontsource/poppins@^5.0.8":
   version "5.0.8"
   resolved "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.0.8.tgz"

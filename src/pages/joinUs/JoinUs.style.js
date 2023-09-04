@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import "@fontsource/poppins";
+import "@fontsource/inter";
 
 export const JoinUsStyle = styled.div`
-background-color: white;
+background-color: black;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -24,12 +25,96 @@ background-color: #6a6863;
 
 `;
 
+export const JoinNow = styled.div`
+
+max-width: 45%;
+margin: 0 10px;
+padding: 100px 20px 20px 20px ;
+
+
+h2 {
+  font-family: "inter"; 
+  font-size: 30px;
+  color: White;
+  font-weight: 100;
+  margin: 0px 0px;
+}
+
+h3 {
+  font-family: "inter"; 
+  font-size: 40px;
+  color: #ffc700;
+  font-weight: 600;
+  margin: 0px 0px;
+}
+
+p {
+  font-family: "inter"; 
+  font-size: 25px;
+  color: White;
+  font-weight: 100;
+  margin-top: 8px;
+
+}
+
+@media (max-width: 1200px) {
+  max-width: 70%;
+  h2 {
+    
+    font-size: 20px;
+  
+  }
+  
+  h3 {
+
+    font-size: 30px;
+  
+  }
+  
+  p {
+   
+    font-size: 15px;
+
+  
+  }
+
+}
+@media (max-width: 950px) {
+  max-width: 80%;
+  h2 {
+    
+    font-size: 15px;
+  
+  }
+  
+  h3 {
+
+    font-size: 20px;
+  
+  }
+  
+  p {
+   
+    font-size: 10px;
+
+  
+  }
+
+}
+
+
+
+
+
+`
+
 
 
 export const FormWrapper = styled.div`
 max-width: 50%;
-padding: 210px 20px;
-margin: 0 auto;
+padding: 10px 20px;
+margin-bottom: 200px;
+// margin: 0 auto;
 
 
 @media (max-width: 1200px) {
@@ -105,6 +190,7 @@ export const ScrollableFormContainer = styled.div`
   ::-webkit-scrollbar-thumb {
     background-color: white; /* Custom scrollbar thumb color */
     border-radius: 5px;
+    
    
   }
 
@@ -163,6 +249,7 @@ export const Input = styled.input`
   background: #404040;
   border: 1px solid black; /* Changed border color to #FFC100 */
   border-radius: 4px;
+  color: white;
 
   @media (max-width: 700px) {
 
@@ -191,11 +278,11 @@ export const RadioButton = styled.input`
   margin-bottom: 5px
   
   // Default styling for unselected radio buttons
-  background-color: white;
+  background-color: white !important;
 
   &:checked {
     // Styling for checked (selected) radio buttons
-    background-color: yellow;
+    background-color: yellow !important;
 }
 
 
@@ -212,7 +299,7 @@ export const SubmitButton = styled.button`
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   font-family: "Poppins"; /* Use Poppins font for p elements */
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
   &:hover {
     background-color: #ffc700;
@@ -230,10 +317,18 @@ export const SubmitButton = styled.button`
 }
 
 
+@media (min-width: 480px) {
+
+  margin: 10px 20px;  
+  font-size: 15px;
+  
+
+}
+
 @media (min-width: 280px) {
 
   margin: 10px 20px;  
-  font-size: 10px;
+  font-size: 12px;
   
 
 }

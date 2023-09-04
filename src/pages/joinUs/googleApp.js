@@ -188,17 +188,27 @@ export const RadioGroup = styled.div`
   }
 `;
 
+
 export const RadioButton = styled.input`
   margin-right: 5px;
   margin-bottom: 5px;
-  background-color: white;
   
-  &:checked {
-    // Styling for checked (selected) radio buttons
-    background-color: yellow !important;
-  }
-`;
 
+
+  .yellow-radio {
+  
+    /* Default styling for unselected radio buttons */
+    background-color: white !important;
+    
+    &:checked {
+      /* Styling for checked (selected) radio buttons */
+      background-color: yellow !important;
+    }
+
+    
+  }
+
+`;
 
 
 export const SubmitButton = styled.button`
@@ -332,7 +342,7 @@ const Form = () => {
               type="radio"
               name="nearestRegion"
               value="atlanta"
-              
+              classname= "yellow-radio"
               onChange={handleInputChange}
             />
             Atlanta, GA
@@ -503,7 +513,7 @@ const Form = () => {
           <Label>Whats your current profession?*</Label>
           <Input
             type="text"
-            name="prof"
+            name="profession"
             value={formData.profession || ''}
             onChange={handleInputChange}
           />
@@ -601,7 +611,7 @@ const Form = () => {
             <br />  Where would you like us to ship your t-shirt?</Label>
           <Input
             type="text"
-            name="addresss"
+            name="address"
             value={formData.address || ''}
             onChange={handleInputChange}
           />
@@ -612,7 +622,7 @@ const Form = () => {
           <Input
             type="text"
             name="linkedin"
-            value={formData.linkdin || ''}
+            value={formData.linkedin || ''}
             onChange={handleInputChange}
           />
         </Question>
