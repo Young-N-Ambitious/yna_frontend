@@ -162,7 +162,7 @@ const JoinUs = () => {
                 </Question>
 
                 <Question>
-                  <Label >Are looking to join our open source project portal?*</Label>
+                  <Label >Are looking to join our open source project portal?</Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
