@@ -35,7 +35,7 @@ const JoinUs = () => {
             <QuestionContainer>
               <ScrollableFormContainer>
                 <Question>
-                  <Label>First Name</Label>
+                  <Label  >First Name*</Label>
                   <Input
                     type="text"
                     name="firstName"
@@ -45,7 +45,7 @@ const JoinUs = () => {
                   />
                 </Question>
                 <Question>
-                  <Label> Last Name</Label>
+                  <Label  > Last Name*</Label>
                   <Input
                     type="text"
                     name="lastName"
@@ -54,8 +54,8 @@ const JoinUs = () => {
                     onChange={handleInputChange}
                   />
                 </Question>
-                <Question>
-                  <Label>Email</Label>
+                <Question >
+                  <Label >Email*</Label>
                   <Input
                     type="email"
                     name="email"
@@ -64,7 +64,7 @@ const JoinUs = () => {
                   />
                 </Question>
                 <Question>
-                  <Label>Phone Number</Label>
+                  <Label >Phone Number*</Label>
                   <Input
                     type="text"
                     name="phone"
@@ -83,7 +83,7 @@ const JoinUs = () => {
                   />
                 </Question>
                 <Question>
-                  <Label>Nearest region?</Label>
+                  <Label >Nearest region?*</Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
@@ -127,7 +127,7 @@ const JoinUs = () => {
                 </Question>
                 <Question>
 
-                  <Label>Are you a student?</Label>
+                  <Label >Are you a student?*</Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
@@ -162,7 +162,7 @@ const JoinUs = () => {
                 </Question>
 
                 <Question>
-                  <Label>Are looking to join our open source project portal?</Label>
+                  <Label >Are looking to join our open source project portal?*</Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
@@ -246,7 +246,7 @@ const JoinUs = () => {
                 </Question>
 
                 <Question>
-                  <Label>Why would you like to join YNA?*</Label>
+                  <Label >Why would you like to join YNA?*</Label>
                   <Input
                     type="text"
                     name="whyjoin"
@@ -256,7 +256,7 @@ const JoinUs = () => {
                 </Question>
 
                 <Question>
-                  <Label>Whats your current profession?*</Label>
+                  <Label >Whats your current profession?*</Label>
                   <Input
                     type="text"
                     name="profession"
@@ -266,7 +266,7 @@ const JoinUs = () => {
                 </Question>
 
                 <Question>
-                  <Label>What are your professional goals?*</Label>
+                  <Label >What are your professional goals?*</Label>
                   <Input
                     type="text"
                     name="goals"
