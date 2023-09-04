@@ -231,7 +231,7 @@ export const Label = styled.label`
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: ${props => props.isRequired ? 'red' : 'inherit'};
+
 
   
   @media (max-width: 700px) {
@@ -383,7 +383,7 @@ const Form = () => {
             <QuestionContainer>
               <ScrollableFormContainer>
                 <Question>
-                  <Label isRequired={true} >First Name*</Label>
+                  <Label  >First Name*</Label>
                   <Input
                     type="text"
                     name="firstName"
@@ -393,7 +393,7 @@ const Form = () => {
                   />
                 </Question>
                 <Question>
-                  <Label isRequired={true} > Last Name*</Label>
+                  <Label  > Last Name*</Label>
                   <Input
                     type="text"
                     name="lastName"
@@ -403,7 +403,7 @@ const Form = () => {
                   />
                 </Question>
                 <Question >
-                  <Label isRequired={true}>Email*</Label>
+                  <Label >Email*</Label>
                   <Input
                     type="email"
                     name="email"
@@ -412,7 +412,7 @@ const Form = () => {
                   />
                 </Question>
                 <Question>
-                  <Label isRequired={true}>Phone Number*</Label>
+                  <Label >Phone Number</Label>
                   <Input
                     type="text"
                     name="phone"
@@ -421,7 +421,7 @@ const Form = () => {
                   />
                 </Question>
                 <Question>
-                  <Label>What is your github user name? <br />
+                  <Label >What is your github user name? <br />
                     Use your correct github name if you have one (if N/A skip)</Label>
                   <Input
                     type="text"
@@ -431,7 +431,7 @@ const Form = () => {
                   />
                 </Question>
                 <Question>
-                  <Label isRequired={true}>Nearest region?*</Label>
+                  <Label >Nearest region?</Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
@@ -475,7 +475,7 @@ const Form = () => {
                 </Question>
                 <Question>
 
-                  <Label isRequired={true}>Are you a student?*</Label>
+                  <Label >Are you a student?</Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
@@ -510,7 +510,7 @@ const Form = () => {
                 </Question>
 
                 <Question>
-                  <Label isRequired={true}>Are looking to join our open source project portal?*</Label>
+                  <Label >Are looking to join our open source project portal?</Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
@@ -594,7 +594,7 @@ const Form = () => {
                 </Question>
 
                 <Question>
-                  <Label isRequired={true}>Why would you like to join YNA?*</Label>
+                  <Label >Why would you like to join YNA?*</Label>
                   <Input
                     type="text"
                     name="whyjoin"
@@ -604,7 +604,7 @@ const Form = () => {
                 </Question>
 
                 <Question>
-                  <Label isRequired={true}>Whats your current profession?*</Label>
+                  <Label >Whats your current profession?*</Label>
                   <Input
                     type="text"
                     name="profession"
@@ -614,7 +614,7 @@ const Form = () => {
                 </Question>
 
                 <Question>
-                  <Label isRequired={true}>What are your professional goals?*</Label>
+                  <Label >What are your professional goals?*</Label>
                   <Input
                     type="text"
                     name="goals"

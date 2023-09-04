@@ -230,14 +230,13 @@ export const Label = styled.label`
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: ${props => props.isRequired ? 'red' : 'inherit'};
 
 
-  &::after {
-    content: '*';
-    color: red; /* Set the color to red */
-    margin-left: 2px; /* Add some spacing between the label text and the asterisk */
+
+  span.asterisk {
+    color: red; /* Set the color to red for the asterisk */
   }
+
 
   
 
