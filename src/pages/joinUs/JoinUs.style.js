@@ -143,7 +143,7 @@ max-width: 100%;
 padding: 50px 100px;
 margin: 0px auto;
 background-color: black;
-border-radius: 8px;
+
 box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.4); /* Add drop shadow */
 h3 {
   
