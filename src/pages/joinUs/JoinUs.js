@@ -127,7 +127,7 @@ const JoinUs = () => {
                 </Question>
                 <Question>
 
-                  <Label >Are you a student?*</Label>
+                  <Label >Are you a student?<span className="asterisk">*</span></Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
@@ -162,7 +162,7 @@ const JoinUs = () => {
                 </Question>
 
                 <Question>
-                  <Label >Are looking to join our open source project portal?*</Label>
+                  <Label >Are looking to join our open source project portal?<span className="asterisk">*</span></Label>
                   <RadioGroup>
                     <RadioButton
                       type="radio"
