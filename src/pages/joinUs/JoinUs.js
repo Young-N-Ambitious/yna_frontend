@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavBar from "../globalComponents/navBar/NavBar";
-import { JoinUsStyle, JoinNow, FormWrapper, QuestionContainer, Question, OuterBox, Label, ScrollableFormContainer, Input, RadioButton, RadioGroup, SubmitButton } from "./JoinUs.style.js";
+import { JoinUsStyle, JoinNow, FormWrapper, QuestionContainer, Question, OuterBox, Label, ScrollableFormContainer, Input, LongInput, RadioButton, RadioGroup, SubmitButton } from "./JoinUs.style.js";
 
 const JoinUs = () => {
   const [formData, setFormData] = useState({});
@@ -247,7 +247,7 @@ const JoinUs = () => {
 
                 <Question>
                   <Label >Why would you like to join YNA?<span className="asterisk">*</span></Label>
-                  <Input
+                  <LongInput
                     type="text"
                     name="whyjoin"
                     value={formData.whyjoin || ''}
@@ -257,7 +257,7 @@ const JoinUs = () => {
 
                 <Question>
                   <Label >Whats your current profession?<span className="asterisk">*</span></Label>
-                  <Input
+                  <LongInput
                     type="text"
                     name="profession"
                     value={formData.profession || ''}
@@ -267,7 +267,7 @@ const JoinUs = () => {
 
                 <Question>
                   <Label >What are your professional goals?<span className="asterisk">*</span></Label>
-                  <Input
+                  <LongInput
                     type="text"
                     name="goals"
                     value={formData.goals || ''}

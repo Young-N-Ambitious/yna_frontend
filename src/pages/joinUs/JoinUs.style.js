@@ -270,6 +270,26 @@ export const Input = styled.input`
   }
 `;
 
+export const LongInput = styled.textarea`
+padding: 10px;
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 25px;
+border-radius: 3px;
+outline: none;
+border: none;
+background: #404040;
+box-shadow: 0px 0px 3px gray;
+padding-bottom: 130px;
+color: white;
+resize: vertical; /* Allow vertical resizing (creating new rows) */
+
+@media (max-width: 700px) {
+  height: 80px; /* Adjust height for smaller screens */
+  padding: 6px;
+}
+`;
+
 export const RadioGroup = styled.div`
   display: flex;
   flex-wrap: wrap; /* Allow radio buttons to wrap on small screens */
