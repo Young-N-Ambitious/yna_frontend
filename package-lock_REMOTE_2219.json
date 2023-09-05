@@ -9,8 +9,7 @@
       "version": "0.1.0",
       "dependencies": {
         "@babel/plugin-proposal-decorators": "^7.21.0",
-        "@fontsource/inter": "^5.0.8",
-        "@fontsource/poppins": "^5.0.8",
+        "@fontsource/poppins": "^5.0.5",
         "@fortawesome/free-brands-svg-icons": "^6.4.0",
         "@fortawesome/react-fontawesome": "^0.2.0",
         "@testing-library/jest-dom": "^5.16.4",
@@ -2517,17 +2516,6 @@
         "url": "https://github.com/sponsors/sindresorhus"
       }
     },
-<<<<<<< HEAD
-    "node_modules/@fontsource/inter": {
-      "version": "5.0.8",
-      "resolved": "https://registry.npmjs.org/@fontsource/inter/-/inter-5.0.8.tgz",
-      "integrity": "sha512-28knWH1BfOiRalfLs90U4sge5mpQ8ZH6FS0PTT+IZMKrZ7wNHDHRuKa1kQJg+uHcc6axBppnxll+HXM4c7zo/Q=="
-    },
-    "node_modules/@fontsource/poppins": {
-      "version": "5.0.8",
-      "resolved": "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.0.8.tgz",
-      "integrity": "sha512-P8owfYWluoUY5Nyzk4gT/L6LmLmseP6ezFWhj6VBUa5pRIdnCvNJpoQ6i/vhekjtJOfqX6nKlB+LCttoUl2GQQ=="
-=======
     "node_modules/@fontsource/poppins": {
       "version": "5.0.5",
       "resolved": "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.0.5.tgz",
@@ -2578,7 +2566,6 @@
         "@fortawesome/fontawesome-svg-core": "~1 || ~6",
         "react": ">=16.3"
       }
->>>>>>> upstream/dev
     },
     "node_modules/@graphql-typed-document-node/core": {
       "version": "3.2.0",
@@ -19661,17 +19648,6 @@
         }
       }
     },
-<<<<<<< HEAD
-    "@fontsource/inter": {
-      "version": "5.0.8",
-      "resolved": "https://registry.npmjs.org/@fontsource/inter/-/inter-5.0.8.tgz",
-      "integrity": "sha512-28knWH1BfOiRalfLs90U4sge5mpQ8ZH6FS0PTT+IZMKrZ7wNHDHRuKa1kQJg+uHcc6axBppnxll+HXM4c7zo/Q=="
-    },
-    "@fontsource/poppins": {
-      "version": "5.0.8",
-      "resolved": "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.0.8.tgz",
-      "integrity": "sha512-P8owfYWluoUY5Nyzk4gT/L6LmLmseP6ezFWhj6VBUa5pRIdnCvNJpoQ6i/vhekjtJOfqX6nKlB+LCttoUl2GQQ=="
-=======
     "@fontsource/poppins": {
       "version": "5.0.5",
       "resolved": "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.0.5.tgz",
@@ -19706,7 +19682,6 @@
       "requires": {
         "prop-types": "^15.8.1"
       }
->>>>>>> upstream/dev
     },
     "@graphql-typed-document-node/core": {
       "version": "3.2.0",

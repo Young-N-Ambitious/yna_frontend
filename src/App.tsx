@@ -1,8 +1,9 @@
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { HomePage, AboutUs, ContactUs, JoinUs, Members, Login, NotFound } from "./pages";
+import { HomePage, AboutUs, JoinUs, Members, Login, NotFound,  } from "./pages";
 import Footer from "./pages/globalComponents/footer/Footer";
-import GoogleApp from "./pages/joinUs/googleApp.js";
+import ContactForm from "./pages/contactForm/ContactForm.js";
+
 
 function App() {
     return (
@@ -13,9 +14,8 @@ function App() {
                         <Route path="/#about-us" element={<AboutUs />} />
                         <Route path="/about-us" element={<AboutUs />} />
                     </Route>
-                    <Route path="/contact-us" element={<ContactUs />} />
+                    <Route path="/contact-us" element={<ContactForm/>} />
                     <Route path="/join-us" element={<JoinUs />} />
-                    <Route path="/google-app" element={<GoogleApp/>} />
                     <Route path="/members" element={<Members />} />
                     <Route path="/login" element={<Login />} />
                     {/* The Below Route is for 404 #PageNotFound, Make sure to Place this route at the end of all Route [if want to add other Route, add Route above 404 Route] */}
