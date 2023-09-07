@@ -54,9 +54,9 @@ const SingleMemberComponent = () => {
                         <h3>{item.name}</h3>
                         <p>Field: {item.field}</p>
                         <div className='bottom-logo'>
-                            <a href="" target="_blank"><img src={yna} alt='yna-logo' /></a>
-                            <a href="" target="_blank"><img src={twitter} alt='twitter-logo' /></a>
-                            <a href="" target="_blank"><img src={linkedin} alt='linkedin-logo' /></a>
+                            <a href="https://kilowattdot.github.io/react-portfolio2/" target="_blank" rel="noreferrer"><img src={yna} alt='yna-logo' /></a>
+                            <a href="https://twitter.com/YNA_Squad" target="_blank" rel="noreferrer"><img src={twitter} alt='twitter-logo' /></a>
+                            <a href="https://www.linkedin.com/company/yna-consult-group/" target="_blank" rel="noreferrer"><img src={linkedin} alt='linkedin-logo' /></a>
                         </div>
                     </div>
                 </div>
