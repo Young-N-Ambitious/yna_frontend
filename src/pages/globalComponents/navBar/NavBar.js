@@ -63,13 +63,13 @@ function NavBar() {
                         >
                             Contact
                         </NavLink>
-                        {/* <NavLink
+                        <NavLink
                             className="linkpadding linkstyle"
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/login"
                         >
                             Login
-                        </NavLink> */}
+                        </NavLink>
                         
                     </div>
                     <div className="mobileLinks">

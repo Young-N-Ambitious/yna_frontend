@@ -1,7 +1,9 @@
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { HomePage, AboutUs, ContactUs, JoinUs, Members, Login, NotFound } from "./pages";
+import { HomePage, AboutUs, JoinUs, Members, Login, NotFound,  } from "./pages";
 import Footer from "./pages/globalComponents/footer/Footer";
+import ContactForm from "./pages/contactForm/ContactForm.js";
+
 
 function App() {
     return (
@@ -12,7 +14,7 @@ function App() {
                         <Route path="/#about-us" element={<AboutUs />} />
                         <Route path="/about-us" element={<AboutUs />} />
                     </Route>
-                    <Route path="/contact-us" element={<ContactUs />} />
+                    <Route path="/contact-us" element={<ContactForm/>} />
                     <Route path="/join-us" element={<JoinUs />} />
                     <Route path="/members" element={<Members />} />
                     <Route path="/login" element={<Login />} />
