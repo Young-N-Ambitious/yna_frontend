@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const SingleMembersStyle = styled.div`
     // border: 2px solid red;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
     padding: 40px 0;
     *{
         margin: 0;
@@ -17,7 +17,7 @@ export const SingleMembersStyle = styled.div`
 
     .single-card{
         border: 2px solid rgba(255, 214, 68, 0.80);
-        width: 378px;
+        width: 375px;
         background: #000;
     }
     .single-card_top img{
