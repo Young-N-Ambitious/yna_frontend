@@ -11,42 +11,12 @@ import useFetchUsers from '../../hooks/useFetchUsers';
 const SingleMemberComponent = () => {
     const data = useFetchUsers();
 
-    const singleMember = !data ? [
-        {
-            img: memberPic,
-            name: "Dorothy Gilchrist",
-            field: "Software Engineering",
-        },
-        {
-            img: memberPic,
-            name: "Dorothy Gilchrist",
-            field: "Backend Engineering",
-        },
-        {
-            img: memberPic,
-            name: "Dorothy Gilchrist",
-            field: "Cloud Engineering",
-        },
-        {
-            img: memberPic,
-            name: "Dorothy Gilchrist",
-            field: "Software Engineering",
-        },
-        {
-            img: memberPic,
-            name: "Dorothy Gilchrist",
-            field: "Frontend Engineering",
-        },
-        {
-            img: memberPic,
-            name: "Dorothy Gilchrist",
-            field: "Frontend Engineering",
-        },
-    ] : data;
+    const singleMember = data;
 
   return (
     <SingleMembersStyle>
-        {singleMember.map(item => {
+        {singleMember.length === 0 && <div>No member to show... Connect to the database</div>}
+        {singleMember && singleMember.map(item => {
             return (
                 <div key={item.name} className='single-card'>
                     <div className='single-card_top'>
