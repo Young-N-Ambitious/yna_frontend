@@ -4,7 +4,7 @@ import { MembersStyle } from "./Members.style.js";
 import ContactPopUp from "../globalComponents/contactPopUp/ContactPopUp";
 import useFetchUsers from "../../hooks/useFetchUsers";
 import Search from "../globalComponents/Search/Search";
-
+import SingleMemberComponent from "../../components/single-member-component/SingleMemberComponent";
 const Members = () => {
   const data = useFetchUsers();
 
@@ -18,6 +18,7 @@ const Members = () => {
       ) : (
         <Search results={data} />
       )}
+      <SingleMemberComponent/>
     </MembersStyle>
   );
 };

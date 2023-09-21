@@ -149,7 +149,7 @@ const Modal = ({ open, onClose }) => {
                             About Us
                         </HashLink>
                     </MenuItem>
-                    {/* <MenuItem>
+                    <MenuItem>
                         <NavLink
                             onClick={onClose}
                             className="link"
@@ -158,7 +158,7 @@ const Modal = ({ open, onClose }) => {
                         >
                             Members
                         </NavLink>
-                    </MenuItem> */}
+                    </MenuItem>
                     <MenuItem>
                         <NavLink
                             onClick={onClose}

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const MembersStyle = styled.div`
+
   background-color: #6a6863;
-  height: 100vh;
   padding: 50px;
+  min-height: 100vh;
 
   .heading {
     text-transform: uppercase;
