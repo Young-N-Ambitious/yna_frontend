@@ -1,21 +1,20 @@
 import React from 'react';
-
 import { SingleMembersStyle } from "./SingleMemberComponent.style";
 import memberPic from "../../assets/member-ph.png";
 import yna from "../../assets/yellowYNAIcon.png";
 import linkedin from "../../assets/linkedin-mem.png";
 import twitter from "../../assets/twitter-mem.png";
-import useFetchUsers from '../../hooks/useFetchUsers';
 
+const SingleMemberComponent = ({data}) => {
+const singleMember = data;
 
-const SingleMemberComponent = () => {
-    const data = useFetchUsers();
-
-    const singleMember = data;
+const noResultsError = () => {
+     return <div>No results found</div>;
+  };
 
   return (
     <SingleMembersStyle>
-        {singleMember.length === 0 && <div>No member to show... Connect to the database</div>}
+        {singleMember.length === 0 && noResultsError()}
         {singleMember && singleMember.map(item => {
             return (
                 <div key={item.name} className='single-card'>

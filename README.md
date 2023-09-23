@@ -23,6 +23,8 @@ Setup Your Local Environment:
 To install this project: 
 * create a fork of the application and clone the app to your local environment: `git clone **ssh_key*` copy the ssh_key from above.
 * run ```npm install``` to install dependencies 
+* Create an .env file and add the following REACT_APP_API_URL={BACKEND API PATH}
+* The API URL path should have been provided by YNA.
 * run ```npm start``` to start the server
 
 ## To Contribute: 
