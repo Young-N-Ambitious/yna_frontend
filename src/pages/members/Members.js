@@ -38,7 +38,7 @@ const Members = () => {
       ) : (
         <>
           <Search results={data} onSearch={handleSearch} /> {/* Pass the onSearch function */}
-          <SingleMemberComponent data={searchQuery === "" ? data : filteredUsers} /> 
+          <SingleMemberComponent displayMember={searchQuery === "" ? data : filteredUsers} /> 
         </>
       )}
     </MembersStyle>
