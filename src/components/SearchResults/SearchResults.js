@@ -40,18 +40,14 @@ const SearchResults = (props) => {
   };
 
   const showUsers = filteredUsers.map((displayMember) => {
-    if (
-      displayMember.industry_title === filteredByJob ||
+    return displayMember.industry_title === filteredByJob ||
       props.input ||
-      !filteredByJob
-    ) {
-      return (
-        <SingleMemberComponent
-          key={displayMember.id}
-          displayMember={displayMember}
-        />
-      );
-    }
+      !filteredByJob ? (
+      <SingleMemberComponent
+        key={displayMember.id}
+        displayMember={displayMember}
+      />
+    ) : null;
   });
 
   return (
