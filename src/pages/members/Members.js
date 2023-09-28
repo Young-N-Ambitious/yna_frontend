@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../globalComponents/navBar/NavBar";
 import { MembersStyle } from "./Members.style.js";
 import ContactPopUp from "../globalComponents/contactPopUp/ContactPopUp";
 import useFetchUsers from "../../hooks/useFetchUsers";
-import Search from "../globalComponents/Search/Search";
-import SingleMemberComponent from "../../components/single-member-component/SingleMemberComponent";
+import Search from "../../components/Search/Search";
+import SearchResults from "../../components/SearchResults/SearchResults";
+
 const Members = () => {
   const data = useFetchUsers();
+  const [searchInputText, setSearchInputText] = useState("");
+
+  const handleSearch = (e) => {
+    setSearchInputText(e.target.value);
+  };
 
   return (
     <MembersStyle>
@@ -16,9 +22,9 @@ const Members = () => {
       {data.length === 0 ? (
         <div>Something went wrong, Please try again</div>
       ) : (
-        <Search results={data} />
+        <Search results={data} onSearch={handleSearch} />
       )}
-      <SingleMemberComponent/>
+      <SearchResults input={searchInputText} />
     </MembersStyle>
   );
 };
