@@ -7,6 +7,7 @@ const Search = ({ onSearch }) => {
     <SearchStyle>
       <div className="search">
         <input
+          type="search"
           className="searchInput"
           placeholder="Search"
           onChange={onSearch}
